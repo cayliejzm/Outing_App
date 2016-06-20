@@ -1,4 +1,4 @@
-class SessionController < ApplicationController
+class SessionsController < ApplicationController
   before_action :authenticate, :only => [:new]
   skip_before_action :fetch_user, :only => [:new, :create]
 
@@ -12,9 +12,10 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
       flash[:success] = "Successfully logged in"
 
-      redirect_to user
+      redirect_to root_path
     else
       flash[:error] = "Invalid email or password"
+      session[:user_id] = nil
       redirect_to login_path
     end
 

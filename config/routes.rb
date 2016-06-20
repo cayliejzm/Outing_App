@@ -2,8 +2,10 @@ Rails.application.routes.draw do
 
   root 'pages#homepage'
 
-  resources :users
-  resources :themes
-  resources :venues
+  get '/login' => 'sessions#new', :as => 'login'
+  post '/login' => 'sessions#create'
+  delete '/login' => 'sessions#destroy', :as => 'logout'
+
+  resources :users, :themes, :venues
 
 end
