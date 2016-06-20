@@ -19,13 +19,13 @@
 </p>
 
 <p>
-  <%= f.label :email %>
-  <%= f.email_field :email, :required => true %>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
 </p>
 
 <p>
-  <%= f.label :address %>
-  <%= f.text_field :address, :required => true %>
+  <%= f.label :email %>
+  <%= f.email_field :email, :required => true %>
 </p>
 
 <p>
@@ -36,6 +36,11 @@
 <p>
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation, :required => true %>
+</p>
+
+<p>
+  <%= f.label :admin %>
+  <%= f.check_box :admin %>
 </p>
 
 <%= f.submit "Create Account" %>
