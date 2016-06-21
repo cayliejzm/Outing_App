@@ -4,7 +4,7 @@ class CreateThemes < ActiveRecord::Migration
       t.text :name
       t.text :content
       t.text :image
-      t.integer :theme_id
+      t.integer :venue_id
 
       t.timestamps null: false
     end

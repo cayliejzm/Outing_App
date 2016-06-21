@@ -78,3 +78,9 @@ sugar_mill = Venue.create :name => 'Sugar Mill', :content => 'fun bar with bingo
 local_taphouse = Venue.create :name => 'The Local Taphouse', :content => 'trivia bar', :venue_type => 'Trivia, drinks', :location => 'Darlinghurst', :phone_number => 293600088
 
 darlo_bar = Venue.create :name => 'Darlo Bar', :content => 'Fun bar w trivia', :venue_type => 'Trivia, drinks', :location => 'Darlinghurst', :phone_number => 293313672
+
+
+wine_and_dine.venues << regatta << absinthe_salon << potting_shed << eau_de_vie << china_doll << bennelong
+cocktails_and_clubs.venues << mrs_sippy << bulletin_place << baxter_inn << four_pines << royal_hotel << bucket_list
+pubs_and_pool.venues << ivy << marquee << chinese_laundry << sash << oxford_art_factory << casablanca
+entertainment.venues << comedy_store << palmer_and_co << five_zero_five << sugar_mill << local_taphouse << darlo_bar

@@ -16,9 +16,17 @@
 </p>
 
 <p>
-  <strong>Theme:</strong>
-  <%= @theme.theme_id %>
+  <strong>Theme ID:</strong>
+  <%= @theme.venue_id %>
 </p>
+
+<% @theme.venues.each do |v| %>
+<ul>
+  <li>
+    <%= link_to( v.name, venue_path(v) ) %>
+  </li>
+</ul>
+<% end %>
 
 <%= link_to 'Edit', edit_theme_path(@theme) %> |
 <%= link_to 'Back', themes_path %>

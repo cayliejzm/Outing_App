@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20160620065406) do
     t.text     "name"
     t.text     "content"
     t.text     "image"
-    t.integer  "theme_id"
+    t.integer  "venue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20160620065406) do
     t.text     "name"
     t.text     "content"
     t.text     "image"
-    t.integer  "venue_id"
+    t.integer  "theme_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.text     "venue_type"
