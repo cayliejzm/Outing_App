@@ -29,7 +29,7 @@ class SessionsController < ApplicationController
 
   private
     def authenticate
-      redirect_to users_path if @current_user
+      redirect_to users_path if @current_user.present?
       # redirect_to :back if @current_user
     end
 
