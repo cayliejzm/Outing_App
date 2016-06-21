@@ -20,9 +20,9 @@ caylie = User.create :name => 'Caylie Morck', :email => 'caylie@ga.co', :passwor
 
 Theme.destroy_all
 
-wine_and_dine = Theme.create :name => 'Wine & Dine', :content => 'Romantic, Upscale, for groups or for date-night'
-
 cocktails_and_clubs = Theme.create :name => 'Cocktails & Clubs', :content => 'Fun night out, dancing all night, dress up etc. etc.'
+
+wine_and_dine = Theme.create :name => 'Wine & Dine', :content => 'Romantic, Upscale, for groups or for date-night'
 
 pubs_and_pool = Theme.create :name => 'Pubs & Pool', :content => 'Casual night out with friends, playing pool, eating burgers, drinking beer etc'
 
@@ -33,9 +33,9 @@ Venue.destroy_all
 
 regatta = Venue.create :name => 'Regatta Rose Bay', :content => 'Romantic waterfront seafood restaurant', :venue_type => "Dinner and drinks", :location => 'Rose Bay', :phone_number => 293276561
 
-absinthe_salon = Venue.create :name => 'Absinthe Salon', :content => 'Step back in time, genuine absinthe salon', :venue_type => 'Drinks', :location => 'Darlinghurst', :phone_number => 296992225
+establishment_bar = Venue.create :name => 'Absinthe Salon', :content => 'Classic elegance meets a pitch-perfect party atmosphere at the ground floor Establishment Bar', :venue_type => 'Drinks, Dinner', :location => 'Sydney CBD', :phone_number => 61292548088
 
-potting_shed = Venue.create :name => "The Potting Shed", :content => 'Fun leafy restaurant at the Grounds', :venue_type => 'Dinner and drinks', :location => 'Alexandria', :phone_number => 296992225
+pelicano = Venue.create :name => "Pelicano", :content => 'Drinking and dining options within a timelessly luxurious yet intimate setting ', :venue_type => 'Dinner and drinks', :location => 'Alexandria', :phone_number => 296992225
 
 eau_de_vie = Venue.create :name => "Eau De Vie", :content => 'More about this venue etc etc etc', :venue_type => 'Drinks', :location => 'Darlinghurst', :phone_number => 422263226
 
@@ -63,7 +63,7 @@ chinese_laundry = Venue.create :name => 'Chinese Laundry', :content => 'some clu
 
 sash = Venue.create :name => 'S.A.S.H', :content => 'another big club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbor', :phone_number => 1
 
-oxford_art_factory = Venue.create :name => 'Oxford Art Factory', :content => 'Fun dance club', :venue_type => 'Club, drinks, dance', :location => 'Darlinghurst', :phone_number => 293323711
+oxford_art_factory = Venue.create :name => 'Oxford Art Factory', :content => 'Fun dance club', :venue_type => 'Live music, dance', :location => 'Darlinghurst', :phone_number => 293323711
 
 casablanca = Venue.create :name => 'Casablanca', :content => 'Snazzy club', :venue_type => 'Club, drinks', :location => 'Double Bay', :phone_number => 293284411
 
@@ -79,8 +79,20 @@ local_taphouse = Venue.create :name => 'The Local Taphouse', :content => 'trivia
 
 darlo_bar = Venue.create :name => 'Darlo Bar', :content => 'Fun bar w trivia', :venue_type => 'Trivia, drinks', :location => 'Darlinghurst', :phone_number => 293313672
 
+australian_heritage_hotel = Venue.create :name => 'The Australian Heritage Hotel', :content => 'The Australian Heritage Hotel remains one of the most intact pubs in Sydney & a favourite watering hole for locals.', :venue_type => 'Pub food, Drinks', :location => 'The Rocks', :phone_number => 61292472229
 
-wine_and_dine.venues << regatta << absinthe_salon << potting_shed << eau_de_vie << china_doll << bennelong
-cocktails_and_clubs.venues << mrs_sippy << bulletin_place << baxter_inn << four_pines << royal_hotel << bucket_list
-pubs_and_pool.venues << ivy << marquee << chinese_laundry << sash << oxford_art_factory << casablanca
-entertainment.venues << comedy_store << palmer_and_co << five_zero_five << sugar_mill << local_taphouse << darlo_bar
+union_hotel = Venue.create :name => 'Union Hotel', :content => ' One of the best beer selections in the city, an ace bistro, pool tables, live music, and a devoted local fan base that loves them for it.', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => 61292472229
+
+golden_barley_hotel = Venue.create :name => 'The Golden Barley Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => 61292472229
+
+courthouse_hotel = Venue.create :name => 'Courthouse Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => 61292472229
+
+glenmore_hotel = Venue.create :name => 'The Glenmore Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'The Rocks', :phone_number => 61292474794
+
+royal_george = Venue.create :name => 'The Glenmore Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Sydney CBD', :phone_number => 61292548002
+
+
+wine_and_dine.venues << regatta << establishment_bar << pelicano << eau_de_vie << china_doll << bennelong
+cocktails_and_clubs.venues << mrs_sippy << ivy << baxter_inn << marquee << casablanca << bucket_list
+pubs_and_pool.venues << australian_heritage_hotel << union_hotel << golden_barley_hotel << courthouse_hotel << glenmore_hotel << royal_george
+entertainment.venues << comedy_store << palmer_and_co << oxford_art_factory << sugar_mill << local_taphouse << darlo_bar
