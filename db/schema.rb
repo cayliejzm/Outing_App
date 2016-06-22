@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20160620065406) do
     t.datetime "updated_at",   null: false
     t.text     "venue_type"
     t.text     "location"
-    t.integer  "phone_number"
+    t.text     "phone_number"
   end
 
 end
