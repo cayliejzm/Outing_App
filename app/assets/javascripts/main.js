@@ -1,1 +1,2 @@
 
+var cats = "Potato";

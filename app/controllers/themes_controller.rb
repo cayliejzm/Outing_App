@@ -10,6 +10,7 @@ class ThemesController < ApplicationController
   # GET /themes/1
   # GET /themes/1.json
   def show
+    #  @theme = Theme.find(params[:id])
   end
 
   # GET /themes/new

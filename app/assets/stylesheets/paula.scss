@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Hind:400,600|Asap|Cantarell|Droid+Sans+Mono|Sintony:400,700);
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:900,600,800);
+
+// PLEASE DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH |
+
+/*font-family: 'Sintony', sans-serif;*/
+
+// APPLICATION HTML ''''''''''''''''''''''''''''''''''''''''''''''''''''
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.brand-logo {
+    margin-left: 250px;
+}
+.container {
+    width: auto;
+}
+footer.page-footer {
+    margin-top: 0px;
+    background-color: #1a1b31;
+    padding-top: 0px;
+}
+
+.section {
+    padding: 0px;
+    margin: 0px;
+}
+
+// NAV ''''''''''''''''''''''''''''''''''''''''''''
+
+.navbar-fixed {
+    position: fixed;
+}
+.navigation {
+    /*background-color:rgba(26, 27, 49, 0.5);*/
+    background-color: rgba(26, 27, 49, 0.5);
+    display: block;
+    line-height: 80px;
+    height: 90px;
+    box-shadow: none;
+}
+.navigation p {
+    color: white;
+    font-family: 'Cantarell', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+}
+
+
+nav a {
+margin-left: 1000px;
+text-transform: uppercase;
+}
+
+section .innerText {
+    transform: translate(-100px, -50%);
+}
+
+// SIDE NAVIGATION SQUARESs
+.pixel {
+    margin: 20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00cccc;
+    opacity: 0.4;
+}
+.pixel.pixelbold {
+    opacity: 1;
+    margin: 20px;
+    width: 20px;
+    height: 20px;
+    background: #00cccc;
+}
+.page-nav {
+    position: fixed;
+    top: 60%;
+    right: 5%;
+    z-index: 30
+}
+
+//  LOGIN BUTTON
+.link {
+// border: 2px solid #00cccc;
+padding: 15px;
+// color:#00cccc;
+color: #1a1b31;
+height: 50px;
+width: 150px;
+background-color: #00cccc;
+top: 8px;
+font-size: 13px;
+text-transform: uppercase;
+}
+
+//  FOOTER '''''''''''''''''''''''''''''''''''''''
+.grey-text {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+
+
+ // IMAGES '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+#pic1 {
+    background-image: url("/assets/gradient2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -20;
+}
+#pic5 {
+    background-image: url("/assets/blurry1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -20;
+}
+
+.pic2 {
+    background-image: url("/assets/ny.jpg");
+    width: 1100px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.pic6 {
+    background-image: url("/assets/strawb.jpeg");
+    width: 800px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.pic3 {
+    background-image: url("/assets/blueberry.jpg");
+    width: 1000px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.pic7 {
+    background-image: url("/assets/seafood.jpg");
+    width: 1000px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.pic4 {
+    background-image: url("/assets/lights.jpeg");
+    width: 800px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.pic8 {
+    background-image: url("/assets/pubs.jpeg");
+    width: 800px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.pic9 {
+    background-image: url("/assets/entertainment.jpeg");
+    width: 1100px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*HEADINGS '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+
+h1 {
+    color: #33cccc;
+    font-size: 50px;
+}
+
+
+h3 {
+    float: left;
+}
+
+
+h4 {
+    font-size: 15px;
+    color: white;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+h5 {
+    color: #33cccc;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-size: 55px;
+    font-weight: 900px;
+    font-family: 'Sintony', sans-serif;
+  }
+
+h7 {
+  margin-left: 1000px;
+  font-size: 8px;
+}
+
+.bold {
+    font-size: 30px;
+    color: #1a1b31;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.light {
+    font-size: 18px;
+    color: grey;
+    margin-left: 50px;
+    /*text-transform: uppercase;*/
+}
+
+#download-button {
+    background-color: #33cccc;
+}
