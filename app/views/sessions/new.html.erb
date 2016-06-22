@@ -1,20 +1,23 @@
-<h2>Login</h2>
+
+<!-- <h2>Login</h2> -->
 
 
 
-<div class="login">
+<div class="loginform">
 <%= form_tag login_path do %>
 <p>
-  <%= label_tag :email %>
-  <%= email_field_tag :email %>
+  <%#= label_tag :email %>
+  <%= email_field_tag :email, type="email", :class => "login", placeholder: "Email" %>
 </p>
 
 <p>
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
+  <%#= label_tag :password %>
+  <%= password_field_tag :password, type="", :class => "login", placeholder: "Password"  %>
 </p>
-</div>
 
-<%= submit_tag "Login" %>
 
-<% end %>
+<%= submit_tag "Log in", :class =>"button"  %>
+
+<% end %></div>
+
+<br><br><br><br>

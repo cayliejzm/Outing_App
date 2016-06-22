@@ -60,7 +60,7 @@ section .innerText {
     transform: translate(-100px, -50%);
 }
 
-// SIDE NAVIGATION SQUARESs
+// SIDE NAVIGATION SQUARES
 .pixel {
     margin: 20px;
     width: 20px;
@@ -94,7 +94,14 @@ background-color: #00cccc;
 top: 8px;
 font-size: 13px;
 text-transform: uppercase;
+box-shadow: none;
 }
+
+.link:focus {
+  outline: none;
+}
+
+
 
 //  FOOTER '''''''''''''''''''''''''''''''''''''''
 .grey-text {
@@ -102,6 +109,54 @@ text-transform: uppercase;
     text-transform: uppercase;
     margin-left: 50px;
 }
+
+//  LOGIN ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.button {
+  margin-top: 10px;
+  padding: 15px;
+  // color:#00cccc;
+  color: white;
+  height: 50px;
+  width: 300px;
+  background-color: #00cccc;
+  top: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  box-shadow: none;
+  outline: none;
+  border: none;
+
+
+}
+.login:focus {
+  outline: none;
+  }
+
+
+.loginbutton {
+  background-color: transparent;
+  border: 2px solid #52667a;
+  text-transform: uppercase;
+  color: #52667a;
+  font-size: 15px;
+  padding: 10px;
+  }
+
+.login {
+  text-transform: uppercase;
+  border-bottom: 2px solid #00cccc;
+
+  }
+
+
+  .loginform {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 200px;
+  }
+
 
 
 
@@ -175,6 +230,14 @@ text-transform: uppercase;
 h1 {
     color: #33cccc;
     font-size: 50px;
+}
+
+//  Log in Sign up
+h2 {
+  color: #33cccc;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
