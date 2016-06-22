@@ -45,9 +45,9 @@ bennelong = Venue.create :name => 'Bennelong', :content => 'Opera House restaura
 
 mrs_sippy = Venue.create :name => 'Mrs.Sippy', :content => 'Fun outdoor bar', :venue_type => 'Dinner and drinks', :location => 'Double Bay', :phone_number => 293623321
 
-bulletin_place = Venue.create :name => 'Bulletin Place', :content => 'Really good bar', :venue_type => 'Drinks', :location => 'CBD', :phone_number => 1
+bulletin_place = Venue.create :name => 'Bulletin Place', :content => 'Really good bar', :venue_type => 'Drinks', :location => 'CBD', :phone_number => 'N/A'
 
-baxter_inn = Venue.create :name => 'The Baxter Inn', :content => 'another really good bar', :venue_type => 'Drinks', :location => 'CBD', :phone_number => 1
+baxter_inn = Venue.create :name => 'The Baxter Inn', :content => 'another really good bar', :venue_type => 'Drinks', :location => 'CBD', :phone_number => 'N/A'
 
 four_pines = Venue.create :name => '4 Pines Brewery', :content => 'Great brewery', :venue_type => 'Dinner and drinks', :location => 'Manly', :phone_number => 299762300
 
@@ -59,9 +59,9 @@ ivy = Venue.create :name => 'The Ivy', :content => 'snazzy ass fancy place in th
 
 marquee = Venue.create :name => 'Marquee Sydney', :content => 'big vegas style club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbour/Pyrmont', :phone_number => 296577737
 
-chinese_laundry = Venue.create :name => 'Chinese Laundry', :content => 'some club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbour', :phone_number => 1
+chinese_laundry = Venue.create :name => 'Chinese Laundry', :content => 'some club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbour', :phone_number => 'N/A'
 
-sash = Venue.create :name => 'S.A.S.H', :content => 'another big club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbor', :phone_number => 1
+sash = Venue.create :name => 'S.A.S.H', :content => 'another big club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbor', :phone_number => 'N/A'
 
 oxford_art_factory = Venue.create :name => 'Oxford Art Factory', :content => 'Fun dance club', :venue_type => 'Live music, dance', :location => 'Darlinghurst', :phone_number => 293323711
 
@@ -71,7 +71,7 @@ comedy_store = Venue.create :name => 'The Comedy Store', :content => 'fun comedy
 
 palmer_and_co = Venue.create :name => 'Palmer & Co', :content => 'live music and specialty whiskey and wine', :venue_type => 'Live music', :location => 'CBD', :phone_number => 292403000
 
-five_zero_five = Venue.create :name => '505', :content => 'fun bar w live music 6 nights a week', :venue_type => 'Live music', :location => 'Surry Hills', :phone_number => 1
+five_zero_five = Venue.create :name => '505', :content => 'fun bar w live music 6 nights a week', :venue_type => 'Live music', :location => 'Surry Hills', :phone_number => 'N/A'
 
 sugar_mill = Venue.create :name => 'Sugar Mill', :content => 'fun bar with bingo', :venue_type => 'Bingo', :location => 'Kings Cross', :phone_number => 293687333
 
