@@ -128,6 +128,7 @@ courthouse_hotel = Venue.create :name => 'Courthouse Hotel', :content => 'Pub, D
 glenmore_hotel = Venue.create :name => 'The Glenmore Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'The Rocks', :phone_number => '61292474794'
 
 royal_george = Venue.create :name => 'The Glenmore Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Sydney CBD', :phone_number => '61292548002'
+
 sugar_mill = Venue.create :name => 'Sugar Mill', :content => 'fun bar with bingo', :venue_type => 'Bingo', :location => 'Kings Cross', :phone_number => 293687333, :image => ''
 
 local_taphouse = Venue.create :name => 'The Local Taphouse', :content => 'trivia bar', :venue_type => 'Trivia, drinks', :location => 'Darlinghurst', :phone_number => 293600088, :image => 'http://www.weekendnotes.com/im/006/03/the-local-taphouse-yeates-wine-launch1.jpg'
