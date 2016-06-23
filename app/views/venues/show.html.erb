@@ -1,82 +1,89 @@
 <p id="notice"><%= notice %></p>
 
 <section id="two">
-    <div class="sectiontwo" style="height: 100vh;">
-        <div class="container">
+    <div class="sectiontwo" style="height: 600px;">
+        <div class="containerstyle">
 
             <div class="row">
                 <div class="col s12 m4">
-                    <br><br><br><br>
 
+                    <h5><%= @venue.name %></h5></div>
 
-                        <h5><%= @venue.name %>  </h5>
+                <!-- </div> -->
+                   <div class="col s12 m8">
+                    <div class="picvenue" style="background-image: url('<%= @venue.image %>')"></div>
 
-
-
-
+                </div>
             </div>
-            <div class="col s12 m8">
-                <div class="picvenue" style="background-image: url('<%= @venue.image %>')"></div>
-            </div>
+
         </div>
-
     </div>
-</div>
 </section>
 
+
 <section id="three">
-<div class="sectionthree" style="height: 100vh;">
-    <div class="container">
+    <div class="sectionthree" style="height: 100vh;">
+        <div class="container">
         <div class="row">
-            <div class="col s12 m8">
-              <!--  this is widget-->
-              <div class="widget">
-              <iframe src="<%= (@venue.link) %>" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0"</div> allowTransparency="true"></iframe>
-
-                <!-- this is map  -->
-              <div style='width: 800px;'>
-                <div id="map" style='width: 400px; height: 400px;'></div>
-              </div>
-              <script>
-              handler = Gmaps.build('Google');
-              handler.buildMap({ provider: {
-              zoom: 1,
-              },
-                internal: {id: 'map'}}, function(){
-                markers = handler.addMarkers(<%=raw @hash.to_json %>);
-                handler.bounds.extendWith(markers);
-                handler.fitMapToBounds();
-              });
-              </script>
+            <div class="col s7 push-s5"><span class="flow-text">hellohelooegleoeokwjfhsajhfadlgfs
 
 
 
 
-              </div>
 
-                <div class="col s12 m4">
+          <!--  this is widget-->
+            <div class="widget">
+             <iframe src="<%= (@venue.link) %>" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" </div> allowTransparency="true"></iframe>
 
-            <p class="bold">
-                <%= @venue.theme.name %></p>
+             <!-- this is map  -->
+             <div style='width: 800px;'>
+                 <div id="map" style='width: 400px; height: 400px;'></div>
+             </div>
+             <script>
+                 handler = Gmaps.build('Google');
+                 handler.buildMap({
+                     provider: {
+                         zoom: 1
+                     },
+                     internal: {
+                         id: 'map'
+                     }
+                 }, function () {
+                     markers = handler.addMarkers(<%=raw @hash.to_json %>);
+                     handler.bounds.extendWith(markers);
+                     handler.fitMapToBounds();
+                 });
+             </script>
+           </span>
+         </div>
+
+            <div class="col s5 pull-s7">
+              <span class="flow-text"></span>
+                 <p class="bold"><%= @venue.theme.name %></p>
+
+                  <br>
+                  <p class="light">
+                      <%= @venue.content %></p> </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
-            <br>
-            <p class="light">
-                <%= @venue.content %></p>
-
-
-                <!-- <div class="col s12 m8">
+                        <!-- <div class="col s12 m8">
             <br>
             <p class="light">
                 <%#= @venue.content %></p>
                 <! this is widget-->
-                <%# if @venue.link != "" %>
-                  <!-- <iframe src="<%#= (@venue.link) %>" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
-                  <%# else %>
-                  <%#= image_tag(@venue.image, height: '400', width: '400') %>
-                  <%# end %>
-                  <!-- this is map  -->
-                <!-- <div style='width: 800px;'>
+                        <%# if @venue.link != "" %>
+                        <!-- <iframe src="<%#= (@venue.link) %>" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
+                    <%# else %>
+                        <%#= image_tag(@venue.image, height: '400', width: '400') %>
+                        <%# end %>
+                        <!-- this is map  -->
+                        <!-- <div style='width: 800px;'>
                 <div id="map" style='width: 400px; height: 400px;'></div>
                 </div>
                 <script>
@@ -91,12 +98,3 @@
                   handler.fitMapToBounds();
                 });
                 </script> -->
-
-
-
-        </div>
-    </div>
-
-</div>
-</div>
-</section>

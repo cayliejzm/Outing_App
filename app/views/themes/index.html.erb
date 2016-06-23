@@ -45,8 +45,13 @@
                       <p class="bold"><%= theme.name %></p>
                       <div class="buttonlayout">
                        <button class="button2">Top Six Venues</button>
+
                         <%= link_to "See All Venues", theme, :class =>"button"%></div>
                         <!-- <%#= link_to "Venues near you", filter_venues_path(theme.id, @search, :class =>"button")%> -->
+
+                        <%#= link_to "See All Venues", theme, :class =>"button"%>
+                        <%= link_to "See All Venues", filter_venues_path(theme.id, @search), :class =>"button"%></div>
+
 
                         <%#= link_to "See Venues", theme, :class =>"button"   %>
                       <br>
