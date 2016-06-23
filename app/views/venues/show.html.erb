@@ -33,27 +33,26 @@
               </div>
 
                 <div class="col s12 m8">
-
-            <p class="bold">
-                <%= @venue.theme.name %></p>
-
-
             <br>
             <p class="light">
                 <%= @venue.content %></p>
                 <!--  this is widget-->
-                <iframe src="<%= (@venue.link) %>" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
+                <% if @venue.link != "" %>
+                  <iframe src="<%= (@venue.link) %>" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                  <% else %>
+                  <%= image_tag(@venue.image, height: '400', width: '400') %>
+                  <% end %>
                   <!-- this is map  -->
                 <div style='width: 800px;'>
-                  <div id="map" style='width: 400px; height: 400px;'></div>
+                <div id="map" style='width: 400px; height: 400px;'></div>
                 </div>
                 <script>
+                var mapOptions = {
+                center: new google.maps.LatLng(-33.8688197, 151.2092955),
+                zoom: 8
+                };
                 handler = Gmaps.build('Google');
-                handler.buildMap({ provider: {
-                zoom: 1,
-                },
-                  internal: {id: 'map'}}, function(){
+                handler.buildMap({ provider: mapOptions, internal: {id: 'map'}}, function(){
                   markers = handler.addMarkers(<%=raw @hash.to_json %>);
                   handler.bounds.extendWith(markers);
                   handler.fitMapToBounds();
