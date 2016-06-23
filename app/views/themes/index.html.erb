@@ -31,6 +31,8 @@
 
 <%= link_to 'New Theme', new_theme_path %> -->
 
+
+
 <section id="one">
     <div class="sectionone" id="pic5" style="height: 100vh;">
         <div class="container">
@@ -58,12 +60,38 @@
         </div>
     </div>
 </section>
-<!-- <span id="overlay" style="opacity: 0.670524;"></span> -->
-<section id="two">
+
+
+<!-- // Change IDs to class for sectiontwo -->
+
+<% @themes.each_with_index do |theme, i| %>
+  <section class="two">
+      <div class="sectiontwo" data-url="/themes/<%= theme.id %>" style="height: 100vh;">
+          <div class="container">
+              <div class="row">
+                  <div class="col s12 m4">
+                    <!-- Hidden form -->
+                    <%#= hidden_field( theme , :value => theme.id ) %>
+                      <h5>
+                          <%= i + 1 %> |</h5>
+                      <p class="bold"><%= theme.name %></p>
+                        <%= link_to "Show", theme  %>
+                      <br>
+                      <p class="light"><%= theme.content %></p>
+                  </div>
+                  <div class="col s12 m8">
+                  <div class="pic6" style="background-image: url('<%= theme.image %>')"> </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+<% end %>
+
+<!-- <section id="two">
     <div class="sectiontwo" style="height: 100vh;">
         <div class="container">
-            <!-- <div class="pixel1 pixel"></div> -->
-            <!--   Icon Section   -->
+
             <div class="row">
                 <div class="col s12 m4">
                     <h5>
@@ -93,7 +121,6 @@
     <div class="sectionthree" style="height: 100vh;">
 
         <div class="container">
-            <!-- <div class="pixel2 pixel"></div> -->
 
             <div class="row">
                 <div class="col s12 m4">
@@ -121,7 +148,6 @@
 <section id="four">
 <div class="sectionfour" style="height: 100vh;">
     <div class="container">
-        <!-- <div class="pixel3 pixel"></div> -->
 
         <div class="row">
             <div class="col s12 m4">
@@ -149,7 +175,6 @@
 <section id="five">
 <div class="sectionfive" style="height: 100vh;">
     <div class="container">
-        <!-- <div class="pixel3 pixel"></div> -->
 
         <div class="row">
             <div class="col s12 m4">
@@ -171,4 +196,4 @@
 
     </div>
 </div>
-</section>
+</section> -->

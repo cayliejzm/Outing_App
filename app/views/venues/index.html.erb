@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></span>
 <div class="Venues">
   <div style='width: 800px;'>
-  <div id="map" style='width: 400px; height: 400px;'></div>
+  <div id="multi_markers" style='width: 400px; height: 400px;'></div>
   </div>
   <script>
   handler = Gmaps.build('Google');
   handler.buildMap({ provider: {
   zoom: 4
   },
-    internal: {id: 'map'}}, function(){
+    internal: {id: 'multi_markers'}}, function(){
     markers = handler.addMarkers(<%=raw @hashes.to_json %>);
     handler.bounds.extendWith(markers);
     handler.fitMapToBounds();

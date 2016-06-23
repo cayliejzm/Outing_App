@@ -1,1 +1,2 @@
-json.extract! @theme, :id, :name, :content, :image, :theme_id, :created_at, :updated_at
+json.extract! @theme, :id, :name, :content, :image, :venue_id, :created_at, :updated_at
+json.venues @theme.venues

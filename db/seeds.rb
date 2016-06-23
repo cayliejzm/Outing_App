@@ -20,13 +20,13 @@ caylie = User.create :name => 'Caylie Morck', :email => 'caylie@ga.co', :passwor
 
 Theme.destroy_all
 
-cocktails_and_clubs = Theme.create :name => 'Cocktails & Clubs', :content => 'Fun night out, dancing all night, dress up etc. etc.'
+cocktails_and_clubs = Theme.create :name => 'Cocktails and Clubs', :content => 'Fun night out, dancing all night, dress up etc. etc.', :image => 'https://images.unsplash.com/photo-1438522014717-d7ce32b9bab9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7923538d14a68ab7672d298fe2793a74'
 
-wine_and_dine = Theme.create :name => 'Wine & Dine', :content => 'Romantic, Upscale, for groups or for date-night'
+wine_and_dine = Theme.create :name => 'Wine and Dine', :content => 'Romantic, Upscale, for groups or for date-night', :image => 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bdae085e253d591fe717a8549354858e'
 
-pubs_and_pool = Theme.create :name => 'Pubs & Pool', :content => 'Casual night out with friends, playing pool, eating burgers, drinking beer etc'
+pubs_and_pool = Theme.create :name => 'Pubs and Pool', :content => 'Casual night out with friends, playing pool, eating burgers, drinking beer etc', :image => 'https://images.unsplash.com/photo-1438557068880-c5f474830377?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a6fbae3380a9b4b075643262e58d9ee4'
 
-entertainment = Theme.create :name => 'Night of Entertainment', :content => 'Comedy shows, live music, trivia night, bingo etc'
+entertainment = Theme.create :name => 'Night of Entertainment', :content => 'Comedy shows, live music, trivia night, bingo etc', :image => 'https://images.unsplash.com/photo-1443186547344-2437c72a228e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0ef7be49eeada3c5fa55935ad1d6cd47'
 
 
 Venue.destroy_all
