@@ -11,13 +11,16 @@
 var $baseVenueContent;
 
 var showVenues = function ( data ) {
+  console.log(data);
   for (var i = 0; i < 6; i++) {
     console.log(i);
     var $p = $("<li></li>");
     var v = data.venues[i];
-    var venueImage = data.venues[i].image;
-    $p.html('<a href="/venues/' + v.id + '">'+ v.name +'</a>');
-    $($baseVenueContent).prepend( $p );
+    var venueImage = $("<img>").attr("src", data.venues[i].image).addClass("thumbnail");
+
+    var $a = $('<a>').attr('href', "/venues/" + v.id).text(v.name).append(venueImage);
+    $p.html($a);
+    $($baseVenueContent).append( $p );
   };
 };
 
