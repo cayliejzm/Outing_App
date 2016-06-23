@@ -1,35 +1,3 @@
-<!-- <p id="notice"><%= notice %></p>
-
-<h1>Listing Themes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Content</th>
-      <th>Image</th>
-      <th>Theme</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @themes.each do |theme| %>
-      <tr>
-        <td><%= theme.name %></td>
-        <td><%= theme.content %></td>
-        <td><%= theme.image %></td>
-        <td><%= link_to 'Show', theme %></td>
-        <td><%= link_to 'Edit', edit_theme_path(theme) %></td>
-        <td><%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Theme', new_theme_path %> -->
 
 
 
@@ -71,7 +39,70 @@
               <div class="row">
                   <div class="col s12 m4">
 
-                      <h5> 0<%= index+1 %> |</h5>
+                      <h5> 0<%= i %> |</h5>
+
+
+                    <!-- Hidden form -->
+                    <%#= hidden_field( theme , :value => theme.id ) %>
+                      <h5>
+                          <%= i + 1 %> |</h5>
+
+                      <p class="bold"><%= theme.name %></p>
+
+                      <%= link_to "Venues near you", filter_venues_path(theme.id, @search)%>
+
+                        <%= link_to "See Venues", theme, :class =>"button"   %>
+                      <br>
+                      <p class="light"><%= theme.content %></p>
+                  </div>
+                  <div class="col s12 m8">
+                  <div class="pic6" style="background-image: url('<%= theme.image %>')"> </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+<% end %>
+
+
+<section id="one">
+    <div class="sectionone" id="pic5" style="height: 100vh;">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1 class="header center">SELECT A THEME</h1>
+            <div class="row center">
+                <h4 class="header col s12 light">Choose a theme to help customise your night
+                </h4>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="row center">
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</section>
+
+
+<!-- // Change IDs to class for sectiontwo -->
+
+<% @themes.each_with_index do |theme, i| %>
+  <section class="two">
+      <div class="sectiontwo" data-url="/themes/<%= theme.id %>" style="height: 100vh;">
+          <div class="container">
+              <div class="row">
+                  <div class="col s12 m4">
+
+                      <h5> 0<%= i %> |</h5>
 
 
                     <!-- Hidden form -->
@@ -92,113 +123,3 @@
       </div>
   </section>
 <% end %>
-
-<!-- <section id="two">
-    <div class="sectiontwo" style="height: 100vh;">
-        <div class="container">
-
-            <div class="row">
-                <div class="col s12 m4">
-                    <h5>
-                        01 |</h5>
-
-                    <p class="bold">Cocktails and Clubs</p>
-                    <%= link_to "Show", filter_venues_path(5, @search)%>
-                      <!-- <a href="/venues/9/">Show</a> -->
-                    <br>
-                    <p class="light">Choose your favourties and save them to easily access them at any time</p>
-
-
-
-
-
-                </div>
-                <div class="col s12 m8">
-                    <div class="pic6"></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="three">
-    <div class="sectionthree" style="height: 100vh;">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col s12 m4">
-                    <h5>
-                        02 |</h5>
-
-                    <p class="bold">Wine and Dine</p>
-                    <%= link_to "Show", filter_venues_path(6, @search)%>
-                    <br>
-                    <p class="light">Select from our four themes, each with our carefully selected places to ensure you have a fun night</p>
-
-                </div>
-                <div class="col s12 m8">
-
-                    <div class="pic7"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-</div>
-<section id="four">
-<div class="sectionfour" style="height: 100vh;">
-    <div class="container">
-
-        <div class="row">
-            <div class="col s12 m4">
-                <h5>
-                    03 |</h5>
-
-                <p class="bold">Pubs and Pool</p>
-                <%= link_to "Show", filter_venues_path(7, @search)%>
-
-                <br>
-                <p class="light">Choose your favourties and save them to easily access them at any time</p>
-            </div>
-
-            <div class="col s12 m8">
-
-                <div class="pic8"></div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-</section>
-
-<section id="five">
-<div class="sectionfive" style="height: 100vh;">
-    <div class="container">
-
-        <div class="row">
-            <div class="col s12 m4">
-                <h5>
-                    04 |</h5>
-
-                <p class="bold">Entertainment</p>
-                <%= link_to "Show", filter_venues_path(8, @search)%>
-
-                <p class="light">Enter your current location to discover new places, or a location that you are planning to travel to for new experiences</p>
-            </div>
-
-            <div class="col s12 m8">
-
-                <div class="pic9"></div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-</section> -->
