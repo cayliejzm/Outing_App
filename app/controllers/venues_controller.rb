@@ -72,7 +72,7 @@ class VenuesController < ApplicationController
   end
 
   def filter
-    @venues = Venue.where("theme_id = #{params[:theme_id]}").near(params[:search], 10)
+    @venues = Venue.where("theme_id = #{params[:theme_id]}").near(params[:search], 5)
     @hash = Gmaps4rails.build_markers(@venues) do |location, marker|
     marker.infowindow render_to_string(@venue => "/venues/(:id)")
     marker.lat location.latitude
