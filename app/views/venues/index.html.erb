@@ -1,19 +1,11 @@
 <p id="notice"><%= notice %></span>
 <div class="Venues">
+
   <div style='width: 800px;'>
   <div id="multi_markers" style='width: 400px; height: 400px;'></div>
   </div>
-  <script>
-  handler = Gmaps.build('Google');
-  handler.buildMap({ provider: {
-  zoom: 4
-  },
-    internal: {id: 'multi_markers'}}, function(){
-    markers = handler.addMarkers(<%=raw @hashes.to_json %>);
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-  });
-  </script>
+
+
 <span>
 Reggatta
 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fregattarosebay%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541663459475276" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -138,5 +130,65 @@ no twitter or facebook will try with location
   Australian Heritage hotel
 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faustralianheritagehotel%2F&tabs=timeline&width=340&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541663459475276" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 </span>
+<span>
+  Royal George
+
+</span>
+
+<span>
+  Watsons bay Boutique
+</span>
+<span>
+  Metro Theatre
+</span>
+<span>
+  enmore theatre
+</span>
+<span>
+  the island
+</span>
+<span>
+  Papi Chulo
+</span>
+<span>
+  hugos
+</span>
+<span>
+  Wharf bar
+</span>
+<span>
+  the newport
+</span>
+<span>
+  cooggee pavillion
+</span>
+<span>
+  steyne hotel
+</span>
+<span>
+  icebergs
+</span>
+<span>
+  marys burgers
+</span>
+<span>
+  bank hotel
+</span>
+<span>
+  beresford
+</span>
+<span>
+  new brighton hotel
+</span>
+<span>
+  beach road
+</span>
+<span>
+  hordern pavillion
+</span>
+<span>
+  sydney opera house
+</span>
+
 </div>
 <%= link_to 'New Venue', new_venue_path %>

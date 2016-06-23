@@ -35,7 +35,13 @@ var showVenues = function ( data ) {
 
 $(document).ready(function () {
   var loadVenues = function (e) {
+    if ( $(this).hasClass("completed") ) {
+      return false;
+    }
+    $(this).addClass("completed");
     $baseVenueContent = $(this).find(".pic6");
+    $baseVenueContent.empty();
+    console.log("AJAX JUST SENT");
     var desiredURL = $(this).data("url");
       // e.preventDefault();
       $.ajax({

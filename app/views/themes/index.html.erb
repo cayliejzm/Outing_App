@@ -1,6 +1,4 @@
 
-
-
 <section id="one">
     <div class="sectionone" id="pic5" style="height: 100vh;">
         <div class="container">
@@ -31,7 +29,6 @@
 
 
 <!-- // Change IDs to class for sectiontwo -->
-
 <% @themes.each_with_index do |theme, i| %>
   <section class="two">
       <div class="sectiontwo" data-url="/themes/<%= theme.id %>" style="height: 100vh;">
@@ -63,7 +60,8 @@
                       <p class="light"><%= theme.content %></p>
                   </div>
                   <div class="col s12 m8">
-                  <div class="pic6" style="background-image: url('<%= theme.image %>')"> </div>
+                  <div class="pic6" style="background-image: url('<%= image_tag(theme.image) %>')"> </div>
+
                   </div>
               </div>
           </div>
@@ -101,7 +99,7 @@
 
 <section id="three">
     <div class="sectionthree" style="height: 100vh;">
->>>>>>> d1599dca2a1a34752caa22051e285f5a55e91192
+
 
 <section id="one">
     <div class="sectionone" id="pic5" style="height: 100vh;">
