@@ -1,40 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Venues near you</h1>
+
 <div style='width: 800px;'>
-<div id="multi_markers" style='width: 400px; height: 400px;'></div>
+<div id="filter_markers" style='width: 500px; height: 500px;'></div>
 </div>
 <script>
-handler = Gmaps.build('Google');
-handler.buildMap({ provider: {
-zoom: 4
-// center: new google.maps.location(<%= @location.to_json %>)
-},
-internal: {id: 'multi_markers'}}, function(){
-markers = handler.addMarkers(<%=raw @hashes.to_json %>);
-handler.bounds.extendWith(markers);
-handler.fitMapToBounds();
-// });
-//     var infowindow = new google.maps.InfoWindow();
-//
-//       var marker, i;
-//
-//       for (i = 0; i < locations.length; i++) {
-//         marker = new google.maps.Marker({
-//           position: new google.maps.LatLng(location[i][1], location[i][2]),
-//           map: map
-//         });
-//
-//         google.maps.event.addListener(marker, 'click', (function(marker, i) {
-//           return function() {
-//             infowindow.setContent(location[i][0]);
-//             infowindow.open(map, marker);
-//           }
-//         })(marker, i));
+
+var mapOptions = {
+center: new google.maps.LatLng(-33.8688197, 151.2092955),
+zoom: 13
+};
+
+var handler = Gmaps.build('Google');
+handler.buildMap({ provider: mapOptions, internal: {id: 'filter_markers' }}, function(){
+markers = handler.addMarkers(<%=raw @hash.to_json %>)
+
 });
+
 </script>
-
-
 <table>
   <thead>
     <tr>
