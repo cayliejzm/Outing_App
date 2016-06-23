@@ -70,7 +70,8 @@
                         01 |</h5>
 
                     <p class="bold">Cocktails and Clubs</p>
-                      <a href="/themes/9">Show</a>
+                    <%= link_to "Show", filter_venues_path(5, @search)%>
+                      <!-- <a href="/venues/9/">Show</a> -->
                     <br>
                     <p class="light">Choose your favourties and save them to easily access them at any time</p>
 
@@ -100,7 +101,7 @@
                         02 |</h5>
 
                     <p class="bold">Wine and Dine</p>
-                        <a href="/themes/10">Show</a>
+                    <%= link_to "Show", filter_venues_path(6, @search)%>
                     <br>
                     <p class="light">Select from our four themes, each with our carefully selected places to ensure you have a fun night</p>
 
@@ -128,7 +129,8 @@
                     03 |</h5>
 
                 <p class="bold">Pubs and Pool</p>
-                <a href="/themes/3">Show</a>
+                <%= link_to "Show", filter_venues_path(7, @search)%>
+
                 <br>
                 <p class="light">Choose your favourties and save them to easily access them at any time</p>
             </div>
@@ -155,7 +157,8 @@
                     04 |</h5>
 
                 <p class="bold">Entertainment</p>
-                <a href="/themes/4">Show</a>
+                <%= link_to "Show", filter_venues_path(8, @search)%>
+
                 <p class="light">Enter your current location to discover new places, or a location that you are planning to travel to for new experiences</p>
             </div>
 

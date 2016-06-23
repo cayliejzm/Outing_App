@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require underscore
+//= require gmaps/google
 //= require ./libraries/ScrollMagic
 //= require_tree ./libraries
 //= require_tree ./models

@@ -16,7 +16,15 @@
             <br>
             <br>
             <div class="row center">
-            <a href='/themes' id="download-button" class="btn-large">Search</a>
+              <div class="container-search">
+
+                <%= form_tag themes_path, :method => :get do %>
+              <p>
+                <%= text_field_tag :search, params[:search] %>
+                <%= submit_tag "Search Near", :name => nil %>
+              </p>
+              <% end %>
+              </div>
             </div>
             <br>
             <br>
