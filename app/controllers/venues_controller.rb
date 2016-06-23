@@ -4,12 +4,26 @@ class VenuesController < ApplicationController
   # GET /venues
   # GET /venues.json
   def index
-    @venues = Venue.all
+    @hashes = Gmaps4rails.build_markers(@venues) do |location, marker|
+    marker.lat location.latitude
+    marker.lng location.longitude
+    if params[:search].present?
+      @venues = Venue.all.near(params[:search], 20, :order => :distance).to_gmaps4rails
+    
+    else
+      @venues = Venue.all
+    end
+    end
   end
 
   # GET /venues/1
   # GET /venues/1.json
   def show
+    @venue = Venue.find(params[:id])
+    @hash = Gmaps4rails.build_markers(@venue) do |location, marker|
+    marker.lat location.latitude
+    marker.lng location.longitude
+    end
   end
 
   # GET /venues/new
@@ -61,6 +75,10 @@ class VenuesController < ApplicationController
     end
   end
 
+  def filter
+    @venues = Venue.where("theme_id = #{params[:theme_id]}").near(params[:search], 10)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_venue
@@ -69,6 +87,6 @@ class VenuesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def venue_params
-      params.require(:venue).permit(:name, :content, :image, :venue_id)
+      params.require(:venue).permit(:name, :content, :image, :venue_id, :location)
     end
 end

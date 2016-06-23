@@ -5,6 +5,7 @@ class ThemesController < ApplicationController
   # GET /themes.json
   def index
     @themes = Theme.all
+    @search = params[:search]
   end
 
   # GET /themes/1
