@@ -17,12 +17,6 @@ var showVenues = function ( data ) {
     var v = data.venues[i];
     var venueImage = data.venues[i].image;
     $p.html('<a href="/venues/' + v.id + '">'+ v.name +'</a>');
-<<<<<<< HEAD
-
-
-=======
-    // $p.asset(data.venues[i].name)
->>>>>>> 29a486bd9678e7bfca1c71c39eadf83f5b685124
     $($baseVenueContent).prepend( $p );
   };
 };

@@ -74,6 +74,7 @@ bucket_list = Venue.create :name => 'The Bucket List', :content => 'fun bar plac
 ivy = Venue.create :name => 'The Ivy', :content => 'snazzy ass fancy place in the city', :venue_type => 'Club, drinks, dancing', :location => 'CBD', :phone_number => '292548100'
 
 marquee = Venue.create :name => 'Marquee Sydney', :content => 'big vegas style club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbour/Pyrmont', :phone_number => '296577737'
+
 four_pines = Venue.create :name => '4 Pines Brewery', :content => 'Great brewery', :venue_type => 'Dinner and drinks', :location => 'Manly', :phone_number => 299762300, :image => 'http://www.weekendnotes.com/im/004/01/manly-manly-bars-sydney-bars-sydney-small-bars-man31.jpg'
 
 royal_hotel = Venue.create :name => 'Royal Hotel Paddington', :content => 'Fun gastro pub place', :venue_type => 'Dinner and drinks', :location => 'Paddington', :phone_number => 293312604, :image => 'http://dwy5pyore8iyb.cloudfront.net/prod/resized/900x600/2015/11/23/0/rooftop-bars-sydney.jpg'
