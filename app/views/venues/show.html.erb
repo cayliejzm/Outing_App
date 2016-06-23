@@ -50,7 +50,7 @@
               </script>
 
 
-<<<<<<< HEAD
+
 
               </div>
 
@@ -64,19 +64,19 @@
             <p class="light">
                 <%= @venue.content %></p>
 
-=======
-                <div class="col s12 m8">
+
+                <!-- <div class="col s12 m8">
             <br>
             <p class="light">
-                <%= @venue.content %></p>
-                <!--  this is widget-->
-                <% if @venue.link != "" %>
-                  <iframe src="<%= (@venue.link) %>" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                  <% else %>
-                  <%= image_tag(@venue.image, height: '400', width: '400') %>
-                  <% end %>
+                <%#= @venue.content %></p>
+                <! this is widget-->
+                <%# if @venue.link != "" %>
+                  <!-- <iframe src="<%#= (@venue.link) %>" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
+                  <%# else %>
+                  <%#= image_tag(@venue.image, height: '400', width: '400') %>
+                  <%# end %>
                   <!-- this is map  -->
-                <div style='width: 800px;'>
+                <!-- <div style='width: 800px;'>
                 <div id="map" style='width: 400px; height: 400px;'></div>
                 </div>
                 <script>
@@ -90,8 +90,8 @@
                   handler.bounds.extendWith(markers);
                   handler.fitMapToBounds();
                 });
-                </script>
->>>>>>> 4f549bdacbafb7512d1374ae5b8e96e19eec8f90
+                </script> -->
+
 
 
         </div>
