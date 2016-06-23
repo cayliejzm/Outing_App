@@ -129,14 +129,7 @@ hordern_pavillion = Venue.create :name => 'The Horden Pavillion', :content => 'l
 sydney_opera_house = Venue.create :name => 'Opera House', :content => 'live music concerts', :venue_type => 'Live music', :location => 'Bennelong', :phone_number => 'N/A', :image =>  'https://unsplash.com/photos/YU6A5I_IjTw', :link => ''
 # 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=6159bf42cd4af0dde37e1aba1b44e66f'
 
-
-<<<<<<< HEAD
-wine_and_dine.venues << regatta << establishment_bar << pelicano << eau_de_vie << china_doll << bennelong << papi_chulo << hugos << wharf_bar << the_newport << icebergs
-cocktails_and_clubs.venues << mrs_sippy << ivy<< bucket_list << watsons_bay_boutique << the_island << baxter_inn << marquee << casablanca  << sash << chinese_laundry
-pubs_and_pool.venues << australian_heritage_hotel << union_hotel << golden_barley_hotel << courthouse_hotel << glenmore_hotel << royal_george << four_pines << steyne_hotel <<marys_burgers << bank_hotel << new_brighton_hotel
-=======
 wine_and_dine.venues << regatta_rose_bay << establishment_bar << pelicano << eau_de_vie << china_doll << bennelong << papi_chulo << hugos << wharf_bar << the_newport << icebergs
 cocktails_and_clubs.venues << mrs_sippy << ivy_sydney << baxter_inn << marquee_sydney << casablanca << bucket_list_sydney << sash << chinese_laundry_sydney << watsons_bay_boutique << the_island
 pubs_and_pool.venues << australian_heritage_hotel << union_hotel << golden_barley_hotel << courthouse_hotel << glenmore_hotel << royal_george << four_pines_brewery << steyne_hotel <<marys_burgers << bank_hotel << new_brighton_hotel
->>>>>>> 49897cd6a5dda9c900e04aa47f5e093467fc73b8
 entertainment.venues << palmer_and_co << oxford_art_factory << beach_road << local_taphouse << darlo_bar << metro_theatre << hordern_pavillion << sydney_opera_house
