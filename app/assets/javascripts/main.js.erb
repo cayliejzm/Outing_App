@@ -11,20 +11,29 @@
 var $baseVenueContent;
 
 var showVenues = function ( data ) {
+  console.log(data);
   for (var i = 0; i < 6; i++) {
     console.log(i);
     var $p = $("<li></li>");
     var v = data.venues[i];
-    $p.html('<a href="/venues/' + v.id + '">'+ v.name +'</a>');
+    var venueImage = $("<img>").attr("src", data.venues[i].image).addClass("thumbnail");
 
-    $($baseVenueContent).prepend( $p );
+    var $a = $('<a>').attr('href', "/venues/" + v.id).text(v.name).append(venueImage);
+    $p.html($a);
+    $($baseVenueContent).append( $p );
   };
 };
 
 
 $(document).ready(function () {
   var loadVenues = function (e) {
+    if ( $(this).hasClass("completed") ) {
+      return false;
+    }
+    $(this).addClass("completed");
     $baseVenueContent = $(this).find(".pic6");
+    $baseVenueContent.empty();
+    console.log("AJAX JUST SENT");
     var desiredURL = $(this).data("url");
       // e.preventDefault();
       $.ajax({

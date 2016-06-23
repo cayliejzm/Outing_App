@@ -1,8 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Hind:400,600|Asap|Cantarell|Droid+Sans+Mono|Sintony:400,700);
-@import url(https://fonts.googleapis.com/css?family=Martel+Sans:900,600,800);
-// PLEASE DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH |
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:900,600,800); // PLEASE DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH |
 /*font-family: 'Sintony', sans-serif;*/
 // APPLICATION HTML ''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.thumbnail {
+  max-width: 200px;
+}
 body,
 html {
     max-width: 100%;
@@ -43,8 +46,9 @@ footer.page-footer {
     float: right;
 }
 nav a {
-    margin-left: 1000px;
+    margin-right: 100px;
     text-transform: uppercase;
+
 }
 section .innerText {
     transform: translate(-100px, -50%);
@@ -82,13 +86,16 @@ section .innerText {
     font-size: 13px;
     text-transform: uppercase;
     box-shadow: none;
-}
-.link:focus {
-    outline: none;
+    margin-left: 600px;
+
 }
 
-.navlogo{
-  margin-right: 500px;
+
+.navlogo {
+margin-left: 220px;
+
+
+
 }
 //  FOOTER '''''''''''''''''''''''''''''''''''''''
 .grey-text {
@@ -96,10 +103,9 @@ section .innerText {
     text-transform: uppercase;
     margin-left: 50px;
 }
-
 .logo {
-  margin-top: 20px;
-  margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 //  LOGIN ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 .button1 {
@@ -260,11 +266,45 @@ h7 {
 #download-button {
     background-color: #33cccc;
 }
-// THEMES PAGE '''''''''''''''''''''''''''''''''''''''''''''''''
-.button {
-    margin-left: 50px;
-    margin-top: 10px;
+//  SEARCH BUTTON - GEO LOCATION
+.download-button {
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #33cccc;
     padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    width: 150px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.container-search{
+  text-align: center;
+  width: 300px;
+  display: inline-block;
+}
+
+// GEO SEARCH HOME PAGE
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+
+  background-color: white;
+  text-transform: uppercase;
+}
+
+// THEMES PAGE '''''''''''''''''''''''''''''''''''''''''''''''''
+.buttonlayout {
+    height: 50px;
+    width: 500px;
+    margin-top: 10px;
+}
+.button {
+    //  vertical-align: middle;
+    margin-left: 10px;
+    // margin-top: 10px;
+    padding: 18.5px;
     // color:#00cccc;
     color: white;
     height: 50px;
@@ -277,6 +317,29 @@ h7 {
     outline: none;
     border: none;
 }
+.button2 {
+    //  vertical-align: middle;
+    //  float: left;
+    // margin-top: 10px;
+    margin-left: 50px;
+    padding: 15px;
+    // color:#00cccc;
+    color: white;
+    height: 50px;
+    width: 150px;
+    background-color: #00cccc;
+    top: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.venuetopshow {
+    width: 1000px;
+    height: 100vh;
+    background-color: white;
+}
 //  VENUE PAGE ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 .picvenue {
     height: 400px;
@@ -284,12 +347,10 @@ h7 {
     background-size: 100% 100%;
     margin-top: 250px;
 }
-
-.box{
-      margin-top: 100px;
-      margin-left: 50px;
-      height: 450px;
-      width: 500px;
-      background-color: #00cccc;
-
+.box {
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 450px;
+    width: 500px;
+    background-color: #00cccc;
 }
