@@ -12,15 +12,23 @@ var $baseVenueContent;
 
 var showVenues = function ( data ) {
   console.log(data);
+
+  var $whiteContainer = $( '<div class="whitebackground"></div>' );
+  $baseVenueContent.append($whiteContainer)
+
+
   for (var i = 0; i < 6; i++) {
     console.log(i);
     var $p = $("<li></li>");
     var v = data.venues[i];
     var venueImage = $("<img>").attr("src", data.venues[i].image).addClass("thumbnail");
-
-    var $a = $('<a>').attr('href', "/venues/" + v.id).text(v.name).append(venueImage);
+    // var background = $(".pic6").toggleClass.addClass("whitebackground")
+    var $a = $('<a>').attr('href', "/venues/" + v.id).html("<br /><p>" + v.name + "</p>").prepend(venueImage);
     $p.html($a);
-    $($baseVenueContent).append( $p );
+
+
+
+    $($whiteContainer).append( $p );
   };
 };
 
