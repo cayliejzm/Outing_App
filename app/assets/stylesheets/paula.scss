@@ -3,9 +3,6 @@
 /*font-family: 'Sintony', sans-serif;*/
 // APPLICATION HTML ''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.thumbnail {
-  max-width: 200px;
-}
 body,
 html {
     max-width: 100%;
@@ -340,6 +337,51 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     height: 100vh;
     background-color: white;
 }
+
+.whitebackground{
+  background-color: white;
+  width: 1000px;
+  height: 100vh;
+//   position: relative;
+}
+
+.whitebackground li {
+
+list-style: none;
+
+// rows: 2;
+// max-width: 800px;
+// max-height: 400px;
+// display:table;
+// float: left;
+// width: 31%;
+width: 80%;
+// background: gainsboro;
+padding: 10px;
+// position: absolute;
+// top: 50%;
+// left: 50%;
+// -webkit-transform: translate(-50%, -50%);
+// -moz-transform: translate(-50%, -50%);
+// -ms-transform: translate(-50%, -50%);
+// -o-transform: translate(-50%, -50%);
+// transform: translate(-50%, -50%);
+}
+
+
+.whitebackground li a {
+text-decoration: none;
+text-transform: uppercase;
+color: #1a1b31;
+}
+
+
+.thumbnail {
+ width: 200px;
+ height: 120px;
+ // position: absolute;
+}
+
 //  VENUE PAGE ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 .picvenue {
     height: 400px;
@@ -353,4 +395,4 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     height: 450px;
     width: 500px;
     background-color: #00cccc;
-}
+  }

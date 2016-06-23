@@ -187,6 +187,6 @@ sydney_opera_house = Venue.create :name => 'Opera House', :content => 'live musi
 
 
 wine_and_dine.venues << regatta << establishment_bar << pelicano << eau_de_vie << china_doll << bennelong << papi_chulo << hugos << wharf_bar << the_newport << icebergs
-cocktails_and_clubs.venues << mrs_sippy << ivy << baxter_inn << marquee << casablanca << bucket_list << sash << chinese_laundry << watsons_bay_boutique << the_island
+cocktails_and_clubs.venues << mrs_sippy << ivy<< bucket_list << watsons_bay_boutique << the_island << baxter_inn << marquee << casablanca  << sash << chinese_laundry
 pubs_and_pool.venues << australian_heritage_hotel << union_hotel << golden_barley_hotel << courthouse_hotel << glenmore_hotel << royal_george << four_pines << steyne_hotel <<marys_burgers << bank_hotel << new_brighton_hotel
 entertainment.venues << palmer_and_co << oxford_art_factory << beach_road << local_taphouse << darlo_bar << metro_theatre << hordern_pavillion << sydney_opera_house
