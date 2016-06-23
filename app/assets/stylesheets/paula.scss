@@ -266,6 +266,34 @@ h7 {
 #download-button {
     background-color: #33cccc;
 }
+//  SEARCH BUTTON - GEO LOCATION
+.download-button {
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #33cccc;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    width: 150px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.container-search{
+  text-align: center;
+  width: 300px;
+  display: inline-block;
+}
+
+// GEO SEARCH HOME PAGE
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+
+  background-color: white;
+  text-transform: uppercase;
+}
+
 // THEMES PAGE '''''''''''''''''''''''''''''''''''''''''''''''''
 .buttonlayout {
     height: 50px;

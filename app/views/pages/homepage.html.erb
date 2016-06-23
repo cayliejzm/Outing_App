@@ -10,7 +10,7 @@
 
             <h1 class="header center">DISCOVER NEW VENUES</h1>
             <div class="row center">
-                <h4 class="header col s12 light">A modern responsive front-end framework based on Material Design</h4>
+                <!-- <h4 class="header col s12 light white-text">Enter in a your current location or a new location that you wish to explore</h4> -->
             </div>
             <br>
             <br>
@@ -20,8 +20,8 @@
 
                 <%= form_tag themes_path, :method => :get do %>
               <p>
-                <%= text_field_tag :search, params[:search] %>
-                <%= submit_tag "Search Near", :name => nil %>
+                <%= text_field_tag :search, params[:search], placeholder: "Enter in a location" %>
+                <%= submit_tag "Search", :name => nil, :class => "download-button"%>
               </p>
               <% end %>
               </div>
