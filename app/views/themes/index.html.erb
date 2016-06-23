@@ -70,12 +70,17 @@
           <div class="container">
               <div class="row">
                   <div class="col s12 m4">
+
+                      <h5> 0<%= index+1 %> |</h5>
+
+
                     <!-- Hidden form -->
                     <%#= hidden_field( theme , :value => theme.id ) %>
                       <h5>
                           <%= i + 1 %> |</h5>
+
                       <p class="bold"><%= theme.name %></p>
-                        <%= link_to "Show", theme  %>
+                        <%= link_to "See Venues", theme, :class =>"button"   %>
                       <br>
                       <p class="light"><%= theme.content %></p>
                   </div>
