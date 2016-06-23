@@ -35,14 +35,15 @@ var showVenues = function ( data ) {
 
 $(document).ready(function () {
   var loadVenues = function (e) {
+    debugger;
     if ( $(this).hasClass("completed") ) {
       return false;
     }
     $(this).addClass("completed");
-    $baseVenueContent = $(this).find(".pic6");
+    $baseVenueContent = $(this).parents('.sectiontwo').find(".pic6");
     $baseVenueContent.empty();
     console.log("AJAX JUST SENT");
-    var desiredURL = $(this).data("url");
+    var desiredURL = $(this).parents('.sectiontwo').data("url");
       // e.preventDefault();
       $.ajax({
         url: desiredURL,
@@ -52,5 +53,5 @@ $(document).ready(function () {
         showVenues(data)
       });
     };
-    $(".sectiontwo").on("click", loadVenues);
+    $(".button2").on("click", loadVenues);
   });

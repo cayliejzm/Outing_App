@@ -25,14 +25,35 @@
 </section>
 
 <section id="three">
-<div class="sectiontwo" style="height: 100vh;">
+<div class="sectionthree" style="height: 100vh;">
     <div class="container">
         <div class="row">
-            <div class="col s12 m4">
+            <div class="col s12 m8">
+              <!--  this is widget-->
+              <div class="widget">
+              <iframe src="<%= (@venue.link) %>" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0"</div> allowTransparency="true"></iframe>
+
+                <!-- this is map  -->
+              <div style='width: 800px;'>
+                <div id="map" style='width: 400px; height: 400px;'></div>
+              </div>
+              <script>
+              handler = Gmaps.build('Google');
+              handler.buildMap({ provider: {
+              zoom: 1,
+              },
+                internal: {id: 'map'}}, function(){
+                markers = handler.addMarkers(<%=raw @hash.to_json %>);
+                handler.bounds.extendWith(markers);
+                handler.fitMapToBounds();
+              });
+              </script>
+
+
 
               </div>
 
-                <div class="col s12 m8">
+                <div class="col s12 m4">
 
             <p class="bold">
                 <%= @venue.theme.name %></p>
@@ -41,24 +62,7 @@
             <br>
             <p class="light">
                 <%= @venue.content %></p>
-                <!--  this is widget-->
-                <iframe src="<%= (@venue.link) %>" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-                  <!-- this is map  -->
-                <div style='width: 800px;'>
-                  <div id="map" style='width: 400px; height: 400px;'></div>
-                </div>
-                <script>
-                handler = Gmaps.build('Google');
-                handler.buildMap({ provider: {
-                zoom: 1,
-                },
-                  internal: {id: 'map'}}, function(){
-                  markers = handler.addMarkers(<%=raw @hash.to_json %>);
-                  handler.bounds.extendWith(markers);
-                  handler.fitMapToBounds();
-                });
-                </script>
 
 
         </div>

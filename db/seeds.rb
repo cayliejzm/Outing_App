@@ -9,6 +9,7 @@
 # end
 
 
+
 User.destroy_all
 
 paula = User.create :name => 'Paula White', :email => 'paula@ga.co', :password => 'chicken', :password_confirmation => 'chicken', :image => 'https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xta1/v/t1.0-9/12191775_10153701068678899_8485956590771412868_n.jpg?oh=251e2c68d146b3ec1da0f9ff123dffdc&oe=57DF3631&__gda__=1474834556_9ae5f594c19c1a448b68b99bc3131b61', :admin => 'true'
@@ -118,7 +119,7 @@ marys_burgers = Venue.create :name => 'Marys Burgers', :content => 'Pub, Burgers
 
 bank_hotel = Venue.create :name => 'The Bank Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => 'N/A', :image => 'http://cdn.concreteplayground.com/content/uploads/2013/06/Bank-Hotel-Beer-Garden-Newtown-Sydney-03.jpeg', :link => ''
 
-beresford = Venue.create :name => 'Beresford Hotel', :content => 'Fun dance club, live music', :venue_type => 'Live music, dance', :location => 'Surry Hills', :phone_number => 292403000, :image =>  'http://cdn.concreteplayground.com/content/uploads/2012/01/The-Beresford-Surry-Hills-Sydney-01.jpeg', :link => ''
+beresford = Venue.create :name => 'Beresford Hotel', :content => 'Fun dance club, live music', :venue_type => 'Live music, dance', :location => 'Surry Hills', :phone_number => 292403000, :image => 'http://cdn.concreteplayground.com/content/uploads/2012/01/The-Beresford-Surry-Hills-Sydney-01.jpeg', :link => ''
 
 new_brighton_hotel = Venue.create :name => 'The Newbrighton Hotel', :content => 'Really good pub on the beach', :venue_type => 'Drinks', :location => 'Manly', :phone_number => 'N/A', :image => 'http://edge.alluremedia.com.au/uploads/businessinsider/2014/12/New-Brighton-1.jpg', :link => ''
 
@@ -130,13 +131,8 @@ sydney_opera_house = Venue.create :name => 'Opera House', :content => 'live musi
 # 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=6159bf42cd4af0dde37e1aba1b44e66f'
 
 
-<<<<<<< HEAD
-wine_and_dine.venues << regatta << establishment_bar << pelicano << eau_de_vie << china_doll << bennelong << papi_chulo << hugos << wharf_bar << the_newport << icebergs
-cocktails_and_clubs.venues << mrs_sippy << ivy<< bucket_list << watsons_bay_boutique << the_island << baxter_inn << marquee << casablanca  << sash << chinese_laundry
-pubs_and_pool.venues << australian_heritage_hotel << union_hotel << golden_barley_hotel << courthouse_hotel << glenmore_hotel << royal_george << four_pines << steyne_hotel <<marys_burgers << bank_hotel << new_brighton_hotel
-=======
+
 wine_and_dine.venues << regatta_rose_bay << establishment_bar << pelicano << eau_de_vie << china_doll << bennelong << papi_chulo << hugos << wharf_bar << the_newport << icebergs
 cocktails_and_clubs.venues << mrs_sippy << ivy_sydney << baxter_inn << marquee_sydney << casablanca << bucket_list_sydney << sash << chinese_laundry_sydney << watsons_bay_boutique << the_island
 pubs_and_pool.venues << australian_heritage_hotel << union_hotel << golden_barley_hotel << courthouse_hotel << glenmore_hotel << royal_george << four_pines_brewery << steyne_hotel <<marys_burgers << bank_hotel << new_brighton_hotel
->>>>>>> 49897cd6a5dda9c900e04aa47f5e093467fc73b8
 entertainment.venues << palmer_and_co << oxford_art_factory << beach_road << local_taphouse << darlo_bar << metro_theatre << hordern_pavillion << sydney_opera_house
