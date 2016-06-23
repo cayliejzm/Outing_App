@@ -9,6 +9,7 @@
 # end
 
 
+
 User.destroy_all
 
 paula = User.create :name => 'Paula White', :email => 'paula@ga.co', :password => 'chicken', :password_confirmation => 'chicken', :image => 'https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xta1/v/t1.0-9/12191775_10153701068678899_8485956590771412868_n.jpg?oh=251e2c68d146b3ec1da0f9ff123dffdc&oe=57DF3631&__gda__=1474834556_9ae5f594c19c1a448b68b99bc3131b61', :admin => 'true'
@@ -123,6 +124,7 @@ marys_burgers = Venue.create :name => 'Marys Burgers', :content => 'Craft beer a
 bank_hotel = Venue.create :name => 'The Bank Hotel', :content => 'Cocktail jugs and hearty food in a bar with an open street view, plus a vibrant, leafy beer garden.', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => 'N/A', :image => 'http://cdn.concreteplayground.com/content/uploads/2013/06/Bank-Hotel-Beer-Garden-Newtown-Sydney-03.jpeg', :link => 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBankHotel%2F%3Ffref%3Dts&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541663459475276'
 
 beresford = Venue.create :name => 'Beresford Hotel', :content => 'Wood-fired pizzas, homemade pasta and cocktails in a vibrant pub with a leafy, lantern-lit patio.', :venue_type => 'Live music, dance', :location => 'Surry Hills', :phone_number => 292403000, :image =>  'http://cdn.concreteplayground.com/content/uploads/2012/01/The-Beresford-Surry-Hills-Sydney-01.jpeg', :link => 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fberesfordhotel%2F%3Ffref%3Dts&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541663459475276'
+
 
 new_brighton_hotel = Venue.create :name => 'The Newbrighton Hotel', :content => 'Sprawling contemporary locale with stylish decor offering bars and bistro dining over 4 levels.', :venue_type => 'Drinks', :location => 'Manly', :phone_number => 'N/A', :image => 'http://edge.alluremedia.com.au/uploads/businessinsider/2014/12/New-Brighton-1.jpg', :link => 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnewbrightonhotel%2F%3Ffref%3Dts&tabs=timeline&width=340&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541663459475276'
 
