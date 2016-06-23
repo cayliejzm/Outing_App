@@ -41,7 +41,10 @@
             <br>
             <p class="light">
                 <%= @venue.content %></p>
-                <iframe src="url('<%= (venue.link) %>')" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <!--  this is widget-->
+                <iframe src="<%= (@venue.link) %>" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+                  <!-- this is map  -->
                 <div style='width: 800px;'>
                   <div id="map" style='width: 400px; height: 400px;'></div>
                 </div>
