@@ -71,16 +71,18 @@
               <div class="row">
                   <div class="col s12 m4">
 
-                      <h5> 0<%= index+1 %> |</h5>
+                      <h5> 0<%= i+1 %> |</h5>
 
 
                     <!-- Hidden form -->
                     <%#= hidden_field( theme , :value => theme.id ) %>
-                      <h5>
-                          <%= i + 1 %> |</h5>
+                      <!-- <h5>
+                          <%#= i + 1 %> |</h5> -->
 
                       <p class="bold"><%= theme.name %></p>
-                        <%= link_to "See Venues", theme, :class =>"button"   %>
+                      <div class="buttonlayout">
+                       <button class="button2">Top Six Venues</button>
+                        <%= link_to "See All Venues", theme, :class =>"button"%></div>
                       <br>
                       <p class="light"><%= theme.content %></p>
                   </div>
