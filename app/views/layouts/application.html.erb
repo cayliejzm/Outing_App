@@ -27,22 +27,36 @@
 
           <!-- <img src="/assets/" alt="logo" class="logo"> -->
 
+<<<<<<< HEAD
+
+          <fb:login-button autologoutlink="true" scope="public_profile,email" onlogin="checkLoginState();">
+          </fb:login-button>
+              <%= link_to "LOGO", '/', :class =>"navlogo"  %>
+                  <!-- <% if @current_user.present? %> -->
+
+                  <!-- <% else %> -->
+                  <%= link_to "Log in", login_path%>
+                  <%= link_to "Sign Up", new_user_path %>
+                  <%= link_to "Logout", logout_path, :method => :delete %>
+
+                  <!-- <% end %> -->
+=======
           <%#= link_to "Sign Up", new_user_path, :class =>"link" %>
             <%= link_to "OUTING", '/', :class =>"navlogo"  %>
                   <%= link_to "Log in", login_path, :class =>"link" %>
+>>>>>>> b4d8461b68d663e57bdb0464923a69094d4d9f6c
                 <ul class="right hide-on-med-and-down">
                     <!-- <li><a href="#">Navbar Link</a></li> -->
                 </ul>
 
                 <ul id="nav-mobile" class="side-nav">
-                  <% if @current_user %>
-                  <%= link_to "Logout", logout_path, :method => :delete%><% end %>
                 </ul>
                 <!-- <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
-            </div>
+
         </nav>
     </div>
-
+    <div id="status">
+    </div>
     <div class="page-nav">
         <a href="#one"><div class="pixel11 pixel"></div></a>
         <a href="#two"><div class="pixel12 pixel"></div></a>
