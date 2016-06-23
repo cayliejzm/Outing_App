@@ -1,17 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Hind:400,600|Asap|Cantarell|Droid+Sans+Mono|Sintony:400,700);
 @import url(https://fonts.googleapis.com/css?family=Martel+Sans:900,600,800);
-
 // PLEASE DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH |
-
 /*font-family: 'Sintony', sans-serif;*/
-
 // APPLICATION HTML ''''''''''''''''''''''''''''''''''''''''''''''''''''
 body,
 html {
     max-width: 100%;
     overflow-x: hidden;
 }
-
 .brand-logo {
     margin-left: 250px;
 }
@@ -19,18 +15,15 @@ html {
     width: auto;
 }
 footer.page-footer {
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #1a1b31;
-    padding-top: 0px;
+    padding-top: 0;
 }
-
 .section {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
-
 // NAV ''''''''''''''''''''''''''''''''''''''''''''
-
 .navbar-fixed {
     position: fixed;
 }
@@ -49,17 +42,13 @@ footer.page-footer {
     text-decoration: none;
     float: right;
 }
-
-
 nav a {
-margin-left: 1000px;
-text-transform: uppercase;
+    margin-left: 1000px;
+    text-transform: uppercase;
 }
-
 section .innerText {
     transform: translate(-100px, -50%);
 }
-
 // SIDE NAVIGATION SQUARES
 .pixel {
     margin: 20px;
@@ -79,30 +68,28 @@ section .innerText {
     position: fixed;
     top: 60%;
     right: 5%;
-    z-index: 30
+    z-index: 30;
 }
-
 //  LOGIN BUTTON
 .link {
-// border: 2px solid #00cccc;
-padding: 15px;
-// color:#00cccc;
-color: #1a1b31;
-height: 50px;
-width: 150px;
-background-color: #00cccc;
-top: 8px;
-font-size: 13px;
-text-transform: uppercase;
-box-shadow: none;
+    // border: 2px solid #00cccc;
+    padding: 15px; // color:#00cccc;
+    color: #1a1b31;
+    height: 50px;
+    width: 150px;
+    background-color: #00cccc;
+    top: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    box-shadow: none;
 }
-
 .link:focus {
-  outline: none;
+    outline: none;
 }
 
-
-
+.navlogo{
+  margin-right: 500px;
+}
 //  FOOTER '''''''''''''''''''''''''''''''''''''''
 .grey-text {
     font-size: 13px;
@@ -110,58 +97,53 @@ box-shadow: none;
     margin-left: 50px;
 }
 
+.logo {
+  margin-top: 20px;
+  margin-left: 50px;
+}
 //  LOGIN ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-.button {
-  margin-top: 10px;
-  padding: 15px;
-  // color:#00cccc;
-  color: white;
-  height: 50px;
-  width: 300px;
-  background-color: #00cccc;
-  top: 8px;
-  font-size: 13px;
-  text-transform: uppercase;
-  box-shadow: none;
-  outline: none;
-  border: none;
-
-
+.button1 {
+    margin-top: 10px;
+    padding: 15px;
+    // color:#00cccc;
+    color: white;
+    height: 50px;
+    width: 300px;
+    background-color: #00cccc;
+    top: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: none;
+    border: none;
 }
 .login:focus {
-  outline: none;
-  }
-
-
+    outline: none;
+}
 .loginbutton {
-  background-color: transparent;
-  border: 2px solid #52667a;
-  text-transform: uppercase;
-  color: #52667a;
-  font-size: 15px;
-  padding: 10px;
-  }
-
+    background-color: transparent;
+    border: 2px solid #52667a;
+    text-transform: uppercase;
+    color: #52667a;
+    font-size: 15px;
+    padding: 10px;
+}
 .login {
-  text-transform: uppercase;
-  border-bottom: 2px solid #00cccc;
-
-  }
-
-
-  .loginform {
+    text-transform: uppercase;
+    border-bottom: 2px solid #00cccc;
+}
+//  loginbutton
+.loginform {
     text-align: center;
     width: 300px;
-    margin: auto;
-    margin-top: 200px;
-  }
-
-
-
-
- // IMAGES '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
+    margin: 200px auto auto;
+}
+.signupform {
+    text-align: center;
+    width: 300px;
+    margin: 120px auto auto;
+}
+// IMAGES '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 #pic1 {
     background-image: url("/assets/gradient2.jpg");
     background-repeat: no-repeat;
@@ -174,7 +156,6 @@ box-shadow: none;
     background-size: cover;
     z-index: -20;
 }
-
 .pic2 {
     background-image: url("/assets/ny.jpg");
     width: 1100px;
@@ -205,7 +186,7 @@ box-shadow: none;
 }
 .pic4 {
     background-image: url("/assets/lights.jpeg");
-    width: 800px;
+    width: 900px;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -224,35 +205,27 @@ box-shadow: none;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-
 /*HEADINGS '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
-
 h1 {
     color: #33cccc;
     font-size: 50px;
 }
-
 //  Log in Sign up
 h2 {
-  color: #33cccc;
-  font-size: 50px;
-  text-align: center;
-  text-transform: uppercase;
+    color: #33cccc;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
 }
-
-
 h3 {
     float: left;
 }
-
-
 h4 {
     font-size: 15px;
     color: white;
     margin-left: 50px;
     text-transform: uppercase;
 }
-
 h5 {
     color: #33cccc;
     margin-left: 50px;
@@ -260,13 +233,17 @@ h5 {
     font-size: 55px;
     font-weight: 900px;
     font-family: 'Sintony', sans-serif;
-  }
-
-h7 {
-  margin-left: 1000px;
-  font-size: 8px;
 }
-
+//  VENUE NAMES
+h6 {
+    color: white;
+    font-size: 50px;
+    margin-left: 50px;
+}
+h7 {
+    margin-left: 1000px;
+    font-size: 8px;
+}
 .bold {
     font-size: 30px;
     color: #1a1b31;
@@ -280,7 +257,39 @@ h7 {
     margin-left: 50px;
     /*text-transform: uppercase;*/
 }
-
 #download-button {
     background-color: #33cccc;
+}
+// THEMES PAGE '''''''''''''''''''''''''''''''''''''''''''''''''
+.button {
+    margin-left: 50px;
+    margin-top: 10px;
+    padding: 15px;
+    // color:#00cccc;
+    color: white;
+    height: 50px;
+    width: 300px;
+    background-color: #00cccc;
+    top: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+//  VENUE PAGE ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+.picvenue {
+    height: 400px;
+    width: 600px;
+    background-size: 100% 100%;
+    margin-top: 250px;
+}
+
+.box{
+      margin-top: 100px;
+      margin-left: 50px;
+      height: 450px;
+      width: 500px;
+      background-color: #00cccc;
+
 }

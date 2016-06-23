@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<<<<<<< HEAD
 <div style='width: 800px;'>
   <div id="map" style='width: 400px; height: 400px;'></div>
 </div>
@@ -33,3 +34,55 @@ zoom: 4
 
 <%= link_to 'Edit', edit_venue_path(@venue) %> |
 <%= link_to 'Back', venues_path %>
+=======
+<!--
+<%#= link_to 'Edit', edit_venue_path(@venue) %> |
+<%#= link_to 'Back', venues_path %> -->
+
+<section id="two">
+    <div class="sectiontwo" style="height: 100vh;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <br><br><br><br>
+
+                    <!-- <div class="box"><br><br><br>  </div> -->
+                        <h5><%= @venue.name %>  </h5>
+
+
+
+
+            </div>
+            <div class="col s12 m8">
+                <div class="picvenue" style="background-image: url('<%= @venue.image %>')"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section id="three">
+<div class="sectiontwo" style="height: 100vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+
+              </div>
+
+                <div class="col s12 m8">
+
+            <p class="bold">
+                <%= @venue.theme.name %></p>
+            <br>
+            <p class="light">
+                <%= @venue.content %></p>
+
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+>>>>>>> 888b4d96da7535337046523b3df57b4ddf601430
