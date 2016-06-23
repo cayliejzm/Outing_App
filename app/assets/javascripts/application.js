@@ -16,10 +16,5 @@
 //= require backbone
 //= require ./libraries/ScrollMagic
 //= require_tree ./libraries
-//= require_tree ./models
-//= require_tree ./collections
-//= require_tree ./views
-//= require_tree ./routers
-//= require turbolinks
-//= require_tree .
 //= require paula
+//= require_tree .

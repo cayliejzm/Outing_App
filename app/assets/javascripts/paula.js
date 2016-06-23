@@ -62,10 +62,10 @@ $(document).ready(function(){
 
 
   $(document).ready(function (){
-      $(".page-nav a").click(function (e){
+      $(".page-nav a").click(function (){
         // console.log(e);
         // $('.pixel').removeClass("pixelbold")
-        e.preventDefault();
+        // e.preventDefault();
         console.log($(this).attr('href'))
         var elId = $(this).attr('href')
         var thisEl = $(this).find("div");

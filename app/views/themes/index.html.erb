@@ -62,15 +62,23 @@
 </section>
 
 
-<% @themes.each_with_index do |theme, index, content, image| %>
-  <section id="two">
-      <div class="sectiontwo" style="height: 100vh;">
-          <div class="container">
+<!-- // Change IDs to class for sectiontwo -->
 
+<% @themes.each_with_index do |theme, i| %>
+  <section class="two">
+      <div class="sectiontwo" data-url="/themes/<%= theme.id %>" style="height: 100vh;">
+          <div class="container">
               <div class="row">
                   <div class="col s12 m4">
+<<<<<<< HEAD
                       <h5> 0<%= index+1 %> |</h5>
 
+=======
+                    <!-- Hidden form -->
+                    <%#= hidden_field( theme , :value => theme.id ) %>
+                      <h5>
+                          <%= i + 1 %> |</h5>
+>>>>>>> 01eb6364e09e95c03863b6bf3401fce899fc5467
                       <p class="bold"><%= theme.name %></p>
                         <%= link_to "See Venues", theme, :class =>"button"   %>
                       <br>
@@ -80,11 +88,11 @@
                   <div class="pic6" style="background-image: url('<%= theme.image %>')"> </div>
                   </div>
               </div>
-
           </div>
       </div>
   </section>
 <% end %>
+
 <!-- <section id="two">
     <div class="sectiontwo" style="height: 100vh;">
         <div class="container">
