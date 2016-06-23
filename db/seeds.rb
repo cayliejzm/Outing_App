@@ -31,6 +31,21 @@ entertainment = Theme.create :name => 'Night of Entertainment', :content => 'Com
 
 Venue.destroy_all
 
+
+regatta = Venue.create :name => 'Regatta Rose Bay', :content => 'Romantic waterfront seafood restaurant', :venue_type => "Dinner and drinks", :location => 'Rose Bay', :phone_number => '293276561'
+
+establishment_bar = Venue.create :name => 'Absinthe Salon', :content => 'Classic elegance meets a pitch-perfect party atmosphere at the ground floor Establishment Bar', :venue_type => 'Drinks, Dinner', :location => 'Sydney CBD', :phone_number => '61292548088'
+
+pelicano = Venue.create :name => "Pelicano", :content => 'Drinking and dining options within a timelessly luxurious yet intimate setting ', :venue_type => 'Dinner and drinks', :location => 'Alexandria', :phone_number => '296992225'
+
+eau_de_vie = Venue.create :name => "Eau De Vie", :content => 'More about this venue etc etc etc', :venue_type => 'Drinks', :location => 'Darlinghurst', :phone_number => '422263226'
+
+china_doll = Venue.create :name => 'China Doll', :content => 'More about venue China Doll', :venue_type => 'Dinner and drinks', :location => 'Woolloomooloo', :phone_number => '293806744'
+
+bennelong = Venue.create :name => 'Bennelong', :content => 'Opera House restaurant', :venue_type => 'Dinner and drinks', :location => 'Circular Quay', :phone_number => '292408000'
+
+mrs_sippy = Venue.create :name => 'Mrs.Sippy', :content => 'Fun outdoor bar', :venue_type => 'Dinner and drinks', :location => 'Double Bay', :phone_number => '293623321'
+
 regatta = Venue.create :name => 'Regatta Rose Bay', :content => 'Romantic waterfront seafood restaurant', :venue_type => "Dinner and drinks", :location => 'Rose Bay', :phone_number => 293276561, :image => 'http://static1.squarespace.com/static/542b709ce4b00b1a2496a405/t/55f76fb9e4b051cfcc0c3f8a/1442279360371/regatta-functions.jpg?format=2500w'
 
 establishment_bar = Venue.create :name => 'Establishment Bar', :content => 'Classic elegance meets a pitch-perfect party atmosphere at the ground floor Establishment Bar', :venue_type => 'Drinks, Dinner', :location => 'Sydney CBD', :phone_number => 61292548088, :image => 'http://barcentral.com.au/wp-content/uploads/Establishment-Main-bar-2.jpg'
@@ -48,8 +63,17 @@ mrs_sippy = Venue.create :name => 'Mrs.Sippy', :content => 'Fun outdoor bar', :v
 bulletin_place = Venue.create :name => 'Bulletin Place', :content => 'Really good bar', :venue_type => 'Drinks', :location => 'CBD', :phone_number => 'N/A', :image => 'http://www.ourdunya.com/wp-content/uploads/2015/07/bulletin-place-crop-03.jpg'
 
 baxter_inn = Venue.create :name => 'The Baxter Inn', :content => 'another really good bar', :venue_type => 'Drinks', :location => 'CBD', :phone_number => 'N/A', :image => 'https://img.zmtcdn.com/data/pictures/9/16564699/20173f9777b7c065ea1078119a1fbb89.jpg'
-# 'https://img.zmtcdn.com/data/pictures/9/16564699/20173f9777b7c065ea1078119a1fbb89.jpg' 'http://journal.staag.co/wp-content/uploads/2015/09/whisky-on-a-bar-e1449397437449.jpg'
 
+
+four_pines = Venue.create :name => '4 Pines Brewery', :content => 'Great brewery', :venue_type => 'Dinner and drinks', :location => 'Manly', :phone_number => '299762300'
+
+royal_hotel = Venue.create :name => 'Royal Hotel Paddington', :content => 'Fun gastro pub place', :venue_type => 'Dinner and drinks', :location => 'Paddington', :phone_number => '293312604'
+
+bucket_list = Venue.create :name => 'The Bucket List', :content => 'fun bar place in bondi', :venue_type => 'Dinner and drinks', :location => 'Bondi Beach', :phone_number => '293654122'
+
+ivy = Venue.create :name => 'The Ivy', :content => 'snazzy ass fancy place in the city', :venue_type => 'Club, drinks, dancing', :location => 'CBD', :phone_number => '292548100'
+
+marquee = Venue.create :name => 'Marquee Sydney', :content => 'big vegas style club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbour/Pyrmont', :phone_number => '296577737'
 four_pines = Venue.create :name => '4 Pines Brewery', :content => 'Great brewery', :venue_type => 'Dinner and drinks', :location => 'Manly', :phone_number => 299762300, :image => 'http://www.weekendnotes.com/im/004/01/manly-manly-bars-sydney-bars-sydney-small-bars-man31.jpg'
 
 royal_hotel = Venue.create :name => 'Royal Hotel Paddington', :content => 'Fun gastro pub place', :venue_type => 'Dinner and drinks', :location => 'Paddington', :phone_number => 293312604, :image => 'http://dwy5pyore8iyb.cloudfront.net/prod/resized/900x600/2015/11/23/0/rooftop-bars-sydney.jpg'
@@ -59,10 +83,20 @@ bucket_list = Venue.create :name => 'The Bucket List', :content => 'fun bar in b
 ivy = Venue.create :name => 'The Ivy', :content => 'snazzy ass fancy place in the city', :venue_type => 'Club, drinks, dancing', :location => 'CBD', :phone_number => 292548100, :image => 'https://format-com-cld-res.cloudinary.com/image/private/s--TFI3cWJ8--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/GuyDaviesPhotographer_HINGE_SydneyLaunch_26.3.2015_0001_HR_iwxs8j.jpg'
 
 marquee = Venue.create :name => 'Marquee Sydney', :content => 'big vegas style club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbour/Pyrmont', :phone_number => 296577737, :image => 'http://www.venue.net.au/wp-content/uploads/2012/05/MLF12_StarMarquee_00244_5_6_7_3_adjust.jpg'
+>>>>>>> 888b4d96da7535337046523b3df57b4ddf601430
 
 chinese_laundry = Venue.create :name => 'Chinese Laundry', :content => 'some club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbour', :phone_number => 'N/A', :image => 'https://images.unsplash.com/17/unsplash_5252bb51404f8_1.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f875778fd4151046302dc3695a48b4bd'
 
 sash = Venue.create :name => 'S.A.S.H', :content => 'another big club', :venue_type => 'Club, drinks, dancing', :location => 'Darling Harbor', :phone_number => 'N/A', :image => 'https://media.timeout.com/images/103258613/image.jpg'
+
+<<<<<<< HEAD
+oxford_art_factory = Venue.create :name => 'Oxford Art Factory', :content => 'Fun dance club', :venue_type => 'Live music, dance', :location => 'Darlinghurst', :phone_number => '293323711'
+
+casablanca = Venue.create :name => 'Casablanca', :content => 'Snazzy club', :venue_type => 'Club, drinks', :location => 'Double Bay', :phone_number => '293284411'
+
+comedy_store = Venue.create :name => 'The Comedy Store', :content => 'fun comedy club and bar', :venue_type => 'Comedy, drinks', :location => 'Moore Park', :phone_number => '293571419'
+
+palmer_and_co = Venue.create :name => 'Palmer & Co', :content => 'live music and specialty whiskey and wine', :venue_type => 'Live music', :location => 'CBD', :phone_number => '292403000'
 
 oxford_art_factory = Venue.create :name => 'Oxford Art Factory', :content => 'Fun dance club', :venue_type => 'Live music, dance', :location => 'Darlinghurst', :phone_number => 293323711, :image =>  'https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3fd72eebac715b0c214f89b6489aaa99'
 # 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4782d4822b877c195f59777715a7b3d1'
@@ -76,6 +110,23 @@ palmer_and_co = Venue.create :name => 'Palmer & Co', :content => 'live music and
 
 five_zero_five = Venue.create :name => '505', :content => 'fun bar w live music 6 nights a week', :venue_type => 'Live music', :location => 'Surry Hills', :phone_number => 'N/A', :image => ''
 
+sugar_mill = Venue.create :name => 'Sugar Mill', :content => 'fun bar with bingo', :venue_type => 'Bingo', :location => 'Kings Cross', :phone_number => '293687333'
+
+local_taphouse = Venue.create :name => 'The Local Taphouse', :content => 'trivia bar', :venue_type => 'Trivia, drinks', :location => 'Darlinghurst', :phone_number => '293600088'
+
+darlo_bar = Venue.create :name => 'Darlo Bar', :content => 'Fun bar w trivia', :venue_type => 'Trivia, drinks', :location => 'Darlinghurst', :phone_number => '293313672'
+
+australian_heritage_hotel = Venue.create :name => 'The Australian Heritage Hotel', :content => 'The Australian Heritage Hotel remains one of the most intact pubs in Sydney & a favourite watering hole for locals.', :venue_type => 'Pub food, Drinks', :location => 'The Rocks', :phone_number => '61292472229'
+
+union_hotel = Venue.create :name => 'Union Hotel', :content => ' One of the best beer selections in the city, an ace bistro, pool tables, live music, and a devoted local fan base that loves them for it.', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => '61292472229'
+
+golden_barley_hotel = Venue.create :name => 'The Golden Barley Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => '61292472229'
+
+courthouse_hotel = Venue.create :name => 'Courthouse Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Newtown', :phone_number => '61292472229'
+
+glenmore_hotel = Venue.create :name => 'The Glenmore Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'The Rocks', :phone_number => '61292474794'
+
+royal_george = Venue.create :name => 'The Glenmore Hotel', :content => 'Pub, Drinks', :venue_type => 'Pub food, Drinks', :location => 'Sydney CBD', :phone_number => '61292548002'
 sugar_mill = Venue.create :name => 'Sugar Mill', :content => 'fun bar with bingo', :venue_type => 'Bingo', :location => 'Kings Cross', :phone_number => 293687333, :image => ''
 
 local_taphouse = Venue.create :name => 'The Local Taphouse', :content => 'trivia bar', :venue_type => 'Trivia, drinks', :location => 'Darlinghurst', :phone_number => 293600088, :image => 'http://www.weekendnotes.com/im/006/03/the-local-taphouse-yeates-wine-launch1.jpg'

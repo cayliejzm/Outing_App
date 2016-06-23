@@ -1,5 +1,40 @@
 <p id="notice"><%= notice %></p>
 
+<<<<<<< HEAD
+<div style='width: 800px;'>
+  <div id="map" style='width: 400px; height: 400px;'></div>
+</div>
+
+<p>
+  <strong>Name:</strong>
+  <%= @venue.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @venue.content %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @venue.image %>
+</p>
+
+<script>
+handler = Gmaps.build('Google');
+handler.buildMap({ provider: {
+zoom: 4
+},
+  internal: {id: 'map'}}, function(){
+  markers = handler.addMarkers(<%=raw @hash.to_json %>);
+  handler.bounds.extendWith(markers);
+  handler.fitMapToBounds();
+});
+</script>
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>
+=======
 <!--
 <%#= link_to 'Edit', edit_venue_path(@venue) %> |
 <%#= link_to 'Back', venues_path %> -->
@@ -50,3 +85,4 @@
 </div>
 </div>
 </section>
+>>>>>>> 888b4d96da7535337046523b3df57b4ddf601430

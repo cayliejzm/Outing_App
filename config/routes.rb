@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   delete '/login' => 'sessions#destroy', :as => 'logout'
 
+  get '/venues/:theme_id/:search' => 'venues#filter', :as => 'filter_venues'
+
   resources :users, :themes, :venues
 
 end
