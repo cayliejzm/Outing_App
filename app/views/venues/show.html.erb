@@ -25,12 +25,8 @@
     <div class="sectionthree" style="height: 100vh;">
         <div class="container">
         <div class="row">
-            <div class="col s7 push-s5"><span class="flow-text">hellohelooegleoeokwjfhsajhfadlgfs
-
-
-
-
-
+            <div class="col s7 push-s5">
+              <span class="flow-text">
           <!--  this is widget-->
             <div class="widget">
              <iframe src="<%= (@venue.link) %>" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" </div> allowTransparency="true"></iframe>
@@ -40,19 +36,16 @@
                  <div id="map" style='width: 400px; height: 400px;'></div>
              </div>
              <script>
-                 handler = Gmaps.build('Google');
-                 handler.buildMap({
-                     provider: {
-                         zoom: 1
-                     },
-                     internal: {
-                         id: 'map'
-                     }
-                 }, function () {
-                     markers = handler.addMarkers(<%=raw @hash.to_json %>);
-                     handler.bounds.extendWith(markers);
-                     handler.fitMapToBounds();
-                 });
+             var mapOptions = {
+             center: new google.maps.LatLng(<%= raw @hash.to_json %>),
+             zoom: 10
+             };
+             var handler = Gmaps.build('Google');
+             handler.buildMap({ provider: mapOptions, internal: {id: 'map'}}, function(){
+               markers = handler.addMarkers(<%=raw @hash.to_json %>);
+               handler.bounds.extendWith(markers);
+               handler.fitMapToBounds();
+             });
              </script>
            </span>
          </div>
@@ -70,7 +63,6 @@
             </div>
         </div>
     </section>
-
 
                         <!-- <div class="col s12 m8">
             <br>

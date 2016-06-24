@@ -1,11 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <br><br><br>
+<<<<<<< HEAD
+<h1>Venues near <%= $search %></h1>
+=======
 <!-- <h1>Venues near you</h1> -->
 
 
 <h1><h1>Venues near <%= $search %></h1></h1>
 
+>>>>>>> 5ba5f1731692875f3b2f996d13154c82e952ab48
 
 <div class="map"
 <div style='width: 800px;'>
@@ -40,9 +44,10 @@ markers = handler.addMarkers(<%=raw @hash.to_json %>)
   <tbody>
     <% @venues.each do |venue| %>
       <tr>
-        <td><%= venue.name %></td>
+
+        <td><%= link_to venue.name, venue %></td>
         <td><%= venue.content %></td>
-        <td><%= venue.location %>
+        <td><%= venue.location %></td>
         <td><%= image_tag(venue.image, height: '200', width: '300') %></td>
 
         <td><%#= link_to 'Show', venue %></td>
