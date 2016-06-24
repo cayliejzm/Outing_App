@@ -25,9 +25,9 @@
         <nav class="navigation">
 
 
-
+            <div class="facebook">
           <fb:login-button autologoutlink="true" scope="public_profile,email" onlogin="checkLoginState();">
-          </fb:login-button>
+          </fb:login-button></div>
               <%= link_to "OUTING", '/', :class =>"navlogo"  %>
 
 
@@ -63,7 +63,7 @@
           <div class="row">
               <div class="col l6 s12">
                 <div class="logo">
-                  <img src="/assets/outinglogo.gif" style="width:100px;height:50px;"></div>
+                  <%= image_tag "outinglogo.gif", :style => "width:100px;height:50px;" %></div>
                   <p class="grey-text">An application designed to give the user the chance to either<br> explore a new neighbourhood, or try something new in a suburb<br> they’re accustomed too through our themes and selections</p>
 
 
@@ -72,9 +72,9 @@
                       <br><br><br>
                     <!-- <h4 class="dark-grey-text">Connect</h4> -->
                     <ul>
-                        <img src="/assets/facebook_logo.gif" style="width:90px;height:70px;">
-                        <img src="/assets/Twitter_logo_blue.gif" style="width:90px;height:70px;">
-                        <img src="/assets/instagram.gif" style="width:90px;height:70px;">
+                        <%= image_tag "facebook_logo.gif", :style => "width:90px;height:70px;" %>
+                        <%= image_tag "Twitter_logo_blue.gif", :style => "width:90px;height:70px;" %>
+                        <%= image_tag "instagram.gif", :style => "width:90px;height:70px;" %>
                     </ul>
                 </div>
             </div>

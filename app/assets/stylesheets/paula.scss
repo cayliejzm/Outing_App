@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Martel+Sans:900,600,800); // PLEASE DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH | DO NOT TOUCH |
 /*font-family: 'Sintony', sans-serif;*/
 // APPLICATION HTML ''''''''''''''''''''''''''''''''''''''''''''''''''''
-
 body,
 html {
     max-width: 100%;
@@ -45,7 +44,6 @@ footer.page-footer {
 nav a {
     margin-right: 100px;
     text-transform: uppercase;
-
 }
 section .innerText {
     transform: translate(-100px, -50%);
@@ -84,16 +82,16 @@ section .innerText {
     text-transform: uppercase;
     box-shadow: none;
     margin-left: 600px;
-
+}
+.navlogo {
+    margin-left: 220px;
+    font-size: 30px;
+    margin-top:-10px;
 }
 
-
-.navlogo {
-margin-left: 220px;
-font-size: 30px;
-
-
-
+.facebook {
+float: right;
+margin-right: 100px;
 }
 //  FOOTER '''''''''''''''''''''''''''''''''''''''
 .grey-text {
@@ -147,63 +145,73 @@ font-size: 30px;
     width: 300px;
     margin: 120px auto auto;
 }
+
+html body .facebook iframe {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  position: relative;
+  top: -46px;
+}
 // IMAGES '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 #pic1 {
-    background-image: url("/assets/gradient2.jpg");
+    background-image: image-url("gradient2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -20;
 }
 #pic5 {
-    background-image: url("/assets/blurry1.jpg");
+    background-image: image-url("blurry1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -20;
 }
 .pic2 {
-    background-image: url("/assets/ny.jpg");
+    background-image: image-url("ny.jpg");
     width: 1100px;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .pic6 {
-    // background-image: url("/assets/strawb.jpeg");
+    // background-image: image-url("strawb.jpeg");
     width: 1000px;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .pic3 {
-    background-image: url("/assets/blueberry.jpg");
+    background-image: image-url("blueberry.jpg");
     width: 1000px;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .pic7 {
-    background-image: url("/assets/seafood.jpg");
+    background-image: image-url("seafood.jpg");
     width: 1000px;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .pic4 {
-    background-image: url("/assets/lights.jpeg");
+    background-image: image-url("lights.jpeg");
     width: 900px;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .pic8 {
-    background-image: url("/assets/pubs.jpeg");
+    background-image: image-url("pubs.jpeg");
     width: 800px;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .pic9 {
-    background-image: url("/assets/entertainment.jpeg");
+    background-image: image-url("entertainment.jpeg");
     width: 1100px;
     height: 100vh;
     background-size: 100% 100%;
@@ -256,7 +264,7 @@ h7 {
     font-weight: bold;
 }
 .light {
-    font-size: 18px;
+    font-size: 16px;
     color: grey;
     margin-left: 50px;
     /*text-transform: uppercase;*/
@@ -278,20 +286,28 @@ h7 {
     border: none;
     text-align: center;
 }
-
-.container-search{
-  text-align: center;
-  width: 300px;
-  display: inline-block;
+.container-search {
+    text-align: center;
+    width: 300px;
+    display: inline-block;
 }
-
 // GEO SEARCH HOME PAGE
-input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
-
-  background-color: white;
-  text-transform: uppercase;
+input:not([type]),
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+textarea.materialize-textarea {
+    background-color: white;
+    text-transform: uppercase;
 }
-
 // THEMES PAGE '''''''''''''''''''''''''''''''''''''''''''''''''
 .buttonlayout {
     height: 50px;
@@ -338,57 +354,45 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     height: 100vh;
     background-color: white;
 }
-
-.whitebackground{
-  padding-right: 150px;
-  padding-top: 70px;
-  background-color: white;
-  width: 1000px;
-  height: 100vh;
-//   position: relative;
+.whitebackground {
+    padding-right: 150px;
+    padding-top: 70px;
+    background-color: white;
+    width: 1000px;
+    height: 100vh; //   position: relative;
 }
-
 .whitebackground li {
-display: block;
-list-style: none;
-
-// rows: 2;
-max-width: 800px;
-max-height: 400px;
-// display:table;
-float: left;
-width: 26%;
-// width: 80%;
-// padding: 5px;
-// padding-right: 10px;
-// top: 50%;
-// left: 50%;
-// -webkit-transform: translate(-50%, -50%);
-// -moz-transform: translate(-50%, -50%);
-// -ms-transform: translate(-50%, -50%);
-// -o-transform: translate(-50%, -50%);
-// transform: translate(-50%, -50%);
-
+    display: block;
+    list-style: none;
+    // rows: 2;
+    max-width: 800px;
+    max-height: 400px; // display:table;
+    float: left;
+    width: 26%; // width: 80%;
+    // padding: 5px;
+    // padding-right: 10px;
+    // top: 50%;
+    // left: 50%;
+    // -webkit-transform: translate(-50%, -50%);
+    // -moz-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // -o-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
 }
-
-
 .whitebackground li a {
-text-decoration: none;
-text-transform: uppercase;
-color: #1a1b31;
-font-size: 13px
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1a1b31;
+    font-size: 13px;
 }
-
-
 .thumbnail {
- max-width: 190px;
- height: 150px;
- margin-top: 70px;
- margin-right: 5px;
- // position: absolute;
- // display: block;
+    max-width: 210px;
+    height: 150px;
+    margin-top: 70px;
+    margin-right: 5px;
+    // position: absolute;
+    // display: block;
 }
-
 //  VENUE PAGE ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 .picvenue {
     height: 400px;
@@ -402,25 +406,18 @@ font-size: 13px
     height: 450px;
     width: 500px;
     background-color: #00cccc;
-  }
-
-  .widget{
-    margin-left: 100px;
-  }
-
-  //  ALL VEUES '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-.map{
-
-// width: 80%;
-position: relative;
-top: 50%;
-left: 50%;
-
-
-
 }
-
-.containerstyle{
-  width: 700px;
-  height: 500px;
+.widget {
+    margin-left: 100px;
+}
+//  ALL VEUES '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+.map {
+    // width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+.containerstyle {
+    width: 700px;
+    height: 500px;
 }
