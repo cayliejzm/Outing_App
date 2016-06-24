@@ -21,6 +21,7 @@ var showVenues = function ( data ) {
     console.log(i);
     var $p = $("<li></li>");
     var v = data.venues[i];
+    console.log( v.image );
     var venueImage = $("<img>").attr("src", data.venues[i].image).addClass("thumbnail");
     // var background = $(".pic6").toggleClass.addClass("whitebackground")
     var $a = $('<a>').attr('href', "/venues/" + v.id).html("<br /><p>" + v.name + "</p>").prepend(venueImage);
