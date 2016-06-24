@@ -155,6 +155,14 @@ html body .facebook iframe {
   position: relative;
   top: -46px;
 }
+
+body .fb_iframe_widget {
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  right: 100px;
+  // top: 14px;
+}
 // IMAGES '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 #pic1 {
     background-image: image-url("gradient2.jpg");
