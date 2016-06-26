@@ -369,6 +369,33 @@ textarea.materialize-textarea {
     width: 1000px;
     height: 100vh; //   position: relative;
 }
+
+.venueshow{
+  width: 1000px;
+  height: 100vh;
+}
+
+a {
+  text-transform: uppercase;
+  color: #1a1b31;
+
+
+}
+
+li{
+  display:block;
+  float:left;
+  width: 30%;
+  list-style: none;
+  margin: 15px;
+}
+//
+div.nearshow{
+  max-height: 200%;
+  width: 1000px;
+ margin-left: 100px;
+
+}
 .whitebackground li {
     display: block;
     list-style: none;

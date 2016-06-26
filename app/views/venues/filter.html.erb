@@ -1,17 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <br><br><br>
-<<<<<<< HEAD
-<h1>Venues near <%= $search %></h1>
-=======
-<!-- <h1>Venues near you</h1> -->
+
+<h2> <%= $search %></h2>
 
 
-<h1><h1>Venues near <%= $search %></h1></h1>
-
->>>>>>> 5ba5f1731692875f3b2f996d13154c82e952ab48
-
-<div class="map"
+<!-- GOOGLE MAP WE HAVE TAKEN IT OFF THE VIEW PAGE -->
+ <!-- <div class="map"
 <div style='width: 800px;'>
 <div id="filter_markers" style='width: 500px; height: 500px'></div>
 </div>
@@ -26,38 +21,29 @@ var handler = Gmaps.build('Google');
 handler.buildMap({ provider: mapOptions, internal: {id: 'filter_markers' }}, function(){
 markers = handler.addMarkers(<%=raw @hash.to_json %>)
 
-});
+}); -->
 
-</script></div>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Content</th>
-      <th>Image</th>
-      <th>Location</th>
 
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="container">
+  <div class="row">
+    <div class="nearshow">
+      <tbody>
+        <% @venues.each do |venue| %>
+          <tr>
 
-  <tbody>
-    <% @venues.each do |venue| %>
-      <tr>
 
-        <td><%= link_to venue.name, venue %></td>
-        <td><%= venue.content %></td>
-        <td><%= venue.location %></td>
-        <td><%= image_tag(venue.image, height: '200', width: '300') %></td>
-
-        <td><%#= link_to 'Show', venue %></td>
-        <td><%#= link_to 'Edit', edit_venue_path(venue) %></td>
-        <td><%#= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+            <!-- <td><%#= venue.content %></td>
+            <td><%#= venue.location %></td> -->
+            <li><td><%= image_tag(venue.image, height: '200', width: '300') %></td>
+            <td><%= link_to venue.name, venue %></td></li>
+            <!-- <td><%#= link_to 'Show', venue %></td>
+            <td><%#= link_to 'Edit', edit_venue_path(venue) %></td>
+            <td><%#= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+          </tr>
+        <% end %>
+      </tbody>
+    </div>
+  </div>
+</div>
 
 <br>
-
-<%#= link_to 'New Venue', new_venue_path %>

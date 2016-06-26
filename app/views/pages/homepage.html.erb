@@ -1,24 +1,13 @@
 <section id="one">
     <div class="sectionone" id="pic1" style="height: 100vh;">
         <div class="container">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
+            <br><br><br><br><br>
             <h1 class="header center">DISCOVER NEW VENUES</h1>
             <div class="row center">
-                <!-- <h4 class="header col s12 light white-text">Enter in a your current location or a new location that you wish to explore</h4> -->
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="row center">
+            </div><br><br><br>
+              <div class="row center">
               <div class="container-search">
-
-                <%= form_tag themes_path, :method => :get do %>
+              <%= form_tag themes_path, :method => :get do %>
               <p>
                 <%= text_field_tag :search, params[:search], placeholder: "Enter in a location" %>
                 <%= submit_tag "Search", :name => nil, :class => "download-button"%>
@@ -26,86 +15,63 @@
               <% end %>
               </div>
             </div>
-            <br>
-            <br>
-        </div>
-    </div>
+            <br>  <br>
+          </div>
+      </div>
 </section>
-<!-- <span id="overlay" style="opacity: 0.670524;"></span> -->
+
 <section id="two">
     <div class="sectiontwo" style="height: 100vh;">
         <div class="container">
-
-            <!--   Icon Section   -->
+          <!--   Icon Section   -->
             <div class="row">
                 <div class="col s12 m4">
-                    <h5>
-                        01 |</h5>
+                    <h5>  01 |</h5>
                     <p class="bold">Enter your location</p>
                     <p class="light">Enter your current location to discover new places, or a location that you are planning to travel to for new experiences</p>
+              </div>
 
-                </div>
-                <div class="col s12 m8">
-                    <div class="pic2"></div>
+            <div class="col s12 m8">
+                <div class="pic2"></div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 <section id="three">
     <div class="sectionthree" style="height: 100vh;">
-
-        <div class="container">
-
-
-            <div class="row">
-                <div class="col s12 m4">
-                    <h5>
-                        02 |</h5>
-
-                    <p class="bold">Choose your theme</p>
-                    <br>
-                    <p class="light">Select from our four themes, each with our carefully selected places to ensure you have a fun night</p>
-
-                </div>
-                <div class="col s12 m8">
-
-                    <div class="pic3"></div>
+      <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+              <h5>02 |</h5>
+                <p class="bold">Choose your theme</p>
+                <br>
+                <p class="light">Select from our four themes, each with our carefully selected places to ensure you have a fun night</p>
+              </div>
+              <div class="col s12 m8">
+              <div class="pic3"></div>
                 </div>
             </div>
-
-        </div>
-
-    </div>
+          </div>
+      </div>
 </section>
 
 </div>
 <section id="four">
-<div class="sectionfour" style="height: 100vh;">
+  <div class="sectionfour" style="height: 100vh;">
     <div class="container">
-
-
-        <div class="row">
-            <div class="col s12 m4">
-                <h5>
-                    03 |</h5>
-
-                <p class="bold">View your selections</p>
-                <br>
-                <p class="light">Choose your favourties and save them to easily access them at any time</p>
-            </div>
-
-            <div class="col s12 m8">
-
-                <div class="pic4"></div>
-
-            </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <h5>  03 |</h5>
+            <p class="bold">View your selections</p>
+            <br>
+            <p class="light">Choose your favourties and save them to easily access them at any time</p>
+          </div>
+          <div class="col s12 m8">
+          <div class="pic4"></div>
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
 </section>
-</body>
-</html>

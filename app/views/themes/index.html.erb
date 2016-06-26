@@ -1,28 +1,17 @@
-
+<!-- FIRST SECTION OF THE PAGE -->
 <section id="one">
     <div class="sectionone" id="pic5" style="height: 100vh;">
         <div class="container">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <h1 class="header center">SELECT A THEME</h1>
+            <br><br> <br><br>
+              <h1 class="header center">SELECT A THEME</h1>
             <div class="row center">
-                <h4 class="header col s12 light">Choose a theme to help customise your night
-                </h4>
+                <h4 class="header col s12 light">Choose a theme to help customise your night</h4>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-
+            <br><br><br><br>
             <div class="row center">
                 <!-- <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large">Search</a> -->
             </div>
-            <br>
-            <br>
+            <br><br>
         </div>
     </div>
 </section>
@@ -35,124 +24,21 @@
           <div class="container">
               <div class="row">
                   <div class="col s12 m4">
-
+                      <!-- RAILS APPLING THE CORRECT INFORMATION TO EACH THEME -->
                       <h5> 0<%= i+1 %> |</h5>
-                    <!-- Hidden form -->
-                    <%#= hidden_field( theme , :value => theme.id ) %>
-                      <!-- <h5>
-                          <%#= i + 1 %> |</h5> -->
-
                       <p class="bold"><%= theme.name %></p>
-                      <div class="buttonlayout">
-                       <button class="button2">Top Six Venues</button>
+                        <div class="buttonlayout">
+                           <button class="button2">Top Six Venues</button>
+                          <%= link_to "See All Venues", filter_venues_path(theme.id, $search), :class =>"button"%></div>
+                          <br>
+                          <p class="light"><%= theme.content %></p>
+                        </div>
 
-                        <%#= link_to "See All Venues", theme, :class =>"button"%>
-                        <!-- <%#= link_to "Venues near you", filter_venues_path(theme.id, @search, :class =>"button")%> -->
-
-                        <%#= link_to "See All Venues", theme, :class =>"button"%>
-                        <%= link_to "See All Venues", filter_venues_path(theme.id, $search), :class =>"button"%></div>
-
-
-                        <%#= link_to "See Venues", theme, :class =>"button"   %>
-                      <br>
-                      <p class="light"><%= theme.content %></p>
-                  </div>
                   <div class="col s12 m8">
                   <div class="pic6" style="background-image: url('<%= theme.image %>')"> </div>
-
-                  </div>
+                </div>
               </div>
           </div>
       </div>
   </section>
 <% end %>
-
-<!-- <section id="two">
-    <div class="sectiontwo" style="height: 100vh;">
-        <div class="container">
-
-            <div class="row">
-                <div class="col s12 m4">
-                    <h5>
-                        01 |</h5>
-
-                    <p class="bold">Cocktails and Clubs</p>
-                      <a href="/themes/9">Show</a>
-                    <br>
-                    <p class="light">Choose your favourties and save them to easily access them at any time</p>
-
-
-
-
-
-                </div>
-                <div class="col s12 m8">
-                    <div class="pic6"></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="three">
-    <div class="sectionthree" style="height: 100vh;">
-
-
-<section id="one">
-    <div class="sectionone" id="pic5" style="height: 100vh;">
-        <div class="container">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <h1 class="header center">SELECT A THEME</h1>
-            <div class="row center">
-                <h4 class="header col s12 light">Choose a theme to help customise your night
-                </h4>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <div class="row center">
-            </div>
-            <br>
-            <br>
-        </div>
-    </div>
-</section>
-
-
-
-<% @themes.each_with_index do |theme, i| %>
-  <section class="two">
-      <div class="sectiontwo" data-url="/themes/<%= theme.id %>" style="height: 100vh;">
-          <div class="container">
-              <div class="row">
-                  <div class="col s12 m4">
-
-                      <h5> 0<%= i %> |</h5>
-
-
-
-                    <%#= hidden_field( theme , :value => theme.id ) %>
-                      <!<h5>
-                          <%= i + 1 %> |</h5>
-
-                      <p class="bold"><%= theme.name %></p>
-                        <%= link_to "See Venues", theme, :class =>"button"   %>
-                      <br>
-                      <p class="light"><%= theme.content %></p>
-                  </div>
-                  <div class="col s12 m8">
-                  <div class="pic6" style="background-image: url('<%= theme.image %>')"> </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-<% end %> -->
