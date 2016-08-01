@@ -55,16 +55,8 @@ function statusChangeCallback(response) {
    function testAPI() {
       console.log('Welcome!  Fetching your information.... ');
       FB.api('/me', function(response) {
-        var query = FB.Data.query('select name,email,hometown_location, sex, pic_square from user where uid={0}', response.id);
-        query.wait(function(rows) {
-          uid = rows[0].uid;
-          document.getElementById('status').innerHTML =
-            'Your name: ' + rows[0].name + "<br />" +
-            'Your email: ' + rows[0].email + "<br />" +
-            'Your hometown_location: ' + rows[0].hometown_location + "<br />" +
-            'Your sex: ' + rows[0].sex + "<br />" +
-            'Your uid: ' + rows[0].uid + "<br />" +
-            '<img src="' + rows[0].pic_square + '" alt="" />' + "<br />";
-          });
-       });
+        var query = FB.Data.query(response.id);
+             document.getElementById('status').innerHTML =
+             'Welcome, ' + response.name  + '!';
+             });
     }
