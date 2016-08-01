@@ -38,14 +38,12 @@
               </div>
               <script>
               var mapOptions = {
-              center: new google.maps.LatLng(<%= raw @hash.to_json %>),
-              zoom: 10
+              center: new google.maps.LatLng(<%= @venue.latitude %>, <%= @venue.longitude %>),
+              zoom: 14
               };
               var handler = Gmaps.build('Google');
               handler.buildMap({ provider: mapOptions, internal: {id: 'map'}}, function(){
                 markers = handler.addMarkers(<%=raw @hash.to_json %>);
-                handler.bounds.extendWith(markers);
-                handler.fitMapToBounds();
               });
               </script>
 
