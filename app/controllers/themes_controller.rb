@@ -4,14 +4,16 @@ class ThemesController < ApplicationController
   # GET /themes
   # GET /themes.json
   def index
+    # raise
     @themes = Theme.all
-    @search = params[:search]
+    $search = params[:search]
   end
 
   # GET /themes/1
   # GET /themes/1.json
   def show
      @theme = Theme.find(params[:id])
+     raise
   end
 
   # GET /themes/new
