@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Venues near <%= $search %></h1>
-
+<br><br><br>
+<!-- <h1>Venues near you</h1> -->
 <br><br><br>
 <h2> <%= $search %></h2>
-
 
 <!-- GOOGLE MAP WE HAVE TAKEN IT OFF THE VIEW PAGE -->
  <!-- <div class="map"
@@ -30,7 +30,6 @@ markers = handler.addMarkers(<%=raw @hash.to_json %>)
       <tbody>
         <% @venues.each do |venue| %>
           <tr>
-
             <!-- <td><%#= venue.content %></td>
             <td><%#= venue.location %></td> -->
             <li><td><%= image_tag(venue.image, height: '200', width: '300') %></td>
