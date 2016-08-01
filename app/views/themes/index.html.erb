@@ -27,12 +27,14 @@
                       <!-- RAILS APPLING THE CORRECT INFORMATION TO EACH THEME -->
                       <h5> 0<%= i+1 %> |</h5>
                       <p class="bold"><%= theme.name %></p>
+
                         <div class="buttonlayout">
                            <button class="button2">Top Six Venues</button>
                           <%= link_to "See All Venues", filter_venues_path(theme.id, $search), :class =>"button"%></div>
                           <br>
                           <p class="light"><%= theme.content %></p>
                         </div>
+
                   <div class="col s12 m8">
                   <div class="pic6" style="background-image: url('<%= theme.image %>')"> </div>
                 </div>
